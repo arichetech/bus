@@ -1,0 +1,224 @@
+ion-header ion-toolbar {
+    --background: var(--primary);
+
+    ion-buttons ion-back-button {
+        --color: var(--white);
+    }
+
+    ion-title {
+        color: var(--white);
+        font-weight: 500;
+        position: absolute !important;
+        top: 0;
+        left: 0;
+        width: 100%;
+        text-align: center !important;
+    }
+}
+
+ion-content {
+    --background: var(--primary);
+}
+
+.booking_receipt {
+    position: relative;
+    margin-top: 10px;
+    min-height: 507px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: calc(100% - 40px);
+        height: 100%;
+        margin: 0 auto;
+        background: var(--white);
+        border-radius: 10px;
+        box-shadow: 0 10px 22px rgba(0, 0, 0, 0.2);
+
+    }
+
+    .container {
+        width: calc(100% - 40px);
+        margin: 0 auto;
+        position: relative;
+        z-index: 99;
+        padding: 0 20px;
+        overflow: hidden;
+
+        &.receipt_header {
+            background: var(--bg-color);
+            border-radius: 10px 10px 0 0;
+            padding-top: 19px;
+            padding-bottom: 25px;
+
+            .img_box {
+                min-width: 37px;
+                max-width: 37px;
+                height: 37px;
+                border-radius: 5px;
+                margin-right: 16px;
+            }
+
+            .text_box {
+                width: 100%;
+
+                h2 {
+                    margin: 0;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    padding-bottom: 2px;
+                }
+
+                h6 {
+                    color: var(--text-light);
+                    margin: 0;
+                    font-size: .85rem;
+                    font-weight: 400;
+
+                    span {
+                        &.end {
+                            font-size: 1rem;
+                            font-weight: 500;
+                            color: var(--primary);
+                        }
+                    }
+                }
+            }
+
+        }
+
+        &.receipt_containt {
+            padding-top: 15px;
+            padding-bottom: 20px;
+
+            ion-row {
+                margin: 0 -5px;
+                padding: 8px 0;
+
+                ion-col {
+
+                    h3 {
+                        margin: 0;
+                        color: var(--text-light);
+                        font-size: 0.8rem;
+                        font-weight: 500;
+                        padding-bottom: 6px;
+                    }
+
+                    h2 {
+                        margin: 0;
+                        color: var(--text-dark);
+                        font-weight: 600;
+                        font-size: 0.95rem;
+                    }
+                }
+            }
+
+            &::after,
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: -10px;
+                width: 20px;
+                height: 20px;
+                background: var(--primary-dark);
+                border-radius: 50%;
+                z-index: 99;
+            }
+
+            &::after {
+                right: -10px;
+                left: unset;
+            }
+
+            &.banner {
+                position: relative;
+                overflow: hidden;
+                padding-top: 0;
+                padding-bottom: 0;
+                min-height: 85px;
+
+                ion-row {
+                    align-items: flex-end;
+                    padding-top: 14px;
+
+                    ion-col {
+                        ion-icon {
+                            display: block;
+                            color: var(--text-light);
+                            font-size: 1.5rem;
+                            transform: rotate(0deg);
+                        }
+
+                        h2 {
+                            color: var(--white);
+                            font-weight: 400;
+                            font-size: 1.45rem;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                        }
+
+                        h3 {
+                            color: var(--white);
+                            opacity: .5;
+                            font-weight: 400;
+                        }
+                    }
+
+                }
+
+                .banner_bg {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+
+                    img {
+                        position: absolute;
+                        top: -72px;
+                    }
+                }
+
+                &::after,
+                &::before {
+                    display: none;
+                }
+            }
+        }
+
+        &.barcode_box {
+            padding-top: 10px;
+            overflow: visible;
+            padding-bottom: 25px;
+
+            .bar_code {
+                width: 231px;
+                margin: 0 auto;
+                margin-top: 8px;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: -10px;
+                left: 0px;
+                right: 0;
+                margin: auto;
+                width: calc(100% - 20px);
+                height: 1px;
+                border-top: 1px dashed var(--text-light);
+            }
+        }
+    }
+}
+
+.button.btn {
+    --background: var(--transparent);
+    opacity: .8;
+}

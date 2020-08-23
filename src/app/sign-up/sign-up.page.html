@@ -1,0 +1,56 @@
+<ion-header class="bg_transparent">
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button text="" icon="arrow-back-outline"></ion-back-button>
+        </ion-buttons>
+        <ion-title> </ion-title>
+    </ion-toolbar>
+    <div class="header_text">
+        <h2>{{'create_account' | translate}}</h2>
+    </div>
+</ion-header>
+
+<ion-content fullscreen>
+    <div class="form">
+        <div class="img_box center_img">
+            <!--            <img src="" class="crop_img">-->
+            <ion-icon class="zmdi zmdi-camera"></ion-icon>
+        </div>
+
+        <ion-list lines="none">
+            <ion-item lines="none">
+                <div class="item_inner">
+                    <ion-label mode="md">{{'enter_full_name' | translate}}</ion-label>
+                    <ion-input mode="md" type="name" value="Sam Smith"></ion-input>
+                </div>
+            </ion-item>
+
+            <ion-item lines="none">
+                <div class="item_inner">
+                    <ion-label mode="md">{{'email_address' | translate}}</ion-label>
+                    <ion-input mode="md" type="email" value="samsmith@mail.com"></ion-input>
+                </div>
+            </ion-item>
+
+            <ion-item lines="none">
+                <div class="item_inner">
+                    <ion-label mode="md">{{'phone_number' | translate}}</ion-label>
+                    <ion-input mode="md" type="email" value="+1 987 654 3210"></ion-input>
+                </div>
+            </ion-item>
+
+            <ion-item lines="none">
+                <div class="item_inner">
+                    <ion-label mode="md">{{'create_password' | translate}} </ion-label>
+                    <ion-input class="password" mode="md" type="password" value="222222"></ion-input>
+                </div>
+            </ion-item>
+        </ion-list>
+    </div>
+</ion-content>
+
+<ion-footer class="ion-no-border">
+    <ion-button mode="md" size="large" shape="full" class="btn" (click)="verification_code()">
+        {{'sign_up_now' | translate}}
+    </ion-button>
+</ion-footer>

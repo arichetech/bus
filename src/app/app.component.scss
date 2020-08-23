@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../assets/font/Roboto-Black.woff2') format('woff2'),
+        url('../assets/font/Roboto-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../assets/font/Roboto-Regular.woff2') format('woff2'),
+        url('../assets/font/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../assets/font/Roboto-Light.woff2') format('woff2'),
+        url('../assets/font/Roboto-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../assets/font/Roboto-Bold.woff2') format('woff2'),
+        url('../assets/font/Roboto-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../assets/font/Roboto-Thin.woff2') format('woff2'),
+        url('../assets/font/Roboto-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../assets/font/Roboto-Medium.woff2') format('woff2'),
+        url('../assets/font/Roboto-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+ *,
+ body,
+ html,
+ p,
+ span,
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ strong,
+ li {
+     --ion-font-family: 'Roboto';
+     font-family: 'Roboto';
+ }
+
+ .zmdi {
+     font: normal normal normal 14px/1 'Material-Design-Iconic-Font';
+ }

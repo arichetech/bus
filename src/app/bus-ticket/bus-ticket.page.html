@@ -1,0 +1,92 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button text="" icon="arrow-back-outline"></ion-back-button>
+        </ion-buttons>
+        <ion-title>{{'ticket_booked' | translate}}</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+
+    <div class="booking_receipt">
+        <div class="container receipt_header d-flex">
+            <div class="img_box center_img">
+                <img src="assets/imgs/bus_1.png" class="crop_img">
+            </div>
+            <div class="text_box">
+                <h2>Polo Travels</h2>
+                <h6 class="d-flex">2X1(36) AC -Sleeper TATA <span class="end">$105.00</span></h6>
+            </div>
+        </div>
+        <div class="container receipt_containt banner">
+            <div class="banner_bg center_img">
+                <img src="assets/imgs/bus.png">
+            </div>
+            <ion-row>
+                <ion-col size="5">
+                    <h3>{{'pick_up_location' | translate}}</h3>
+                    <h2>Old City Market, <br>Houstone, USA</h2>
+                </ion-col>
+                <ion-col size="2" class="ion-text-center">
+                    <ion-icon class="zmdi zmdi-arrow-right"></ion-icon>
+                </ion-col>
+                <ion-col size="5" class="ion-text-end">
+                    <h3>{{'drop_location' | translate}}</h3>
+                    <h2>White church, Manhattan, USA</h2>
+                </ion-col>
+            </ion-row>
+        </div>
+        <div class="container receipt_containt">
+            <ion-row>
+                <ion-col size="6">
+                    <h3>{{'depature' | translate}}</h3>
+                    <h2>23 Jun, 12:35 am</h2>
+                </ion-col>
+                <ion-col size="6" class="ion-text-end">
+                    <h3>{{'arrival' | translate}}</h3>
+                    <h2>24 Jun, 11:45 pm</h2>
+                </ion-col>
+            </ion-row>
+
+            <ion-row>
+                <ion-col size="4">
+                    <h3>{{'class' | translate}}</h3>
+                    <h2>Upper Seat</h2>
+                </ion-col>
+
+                <ion-col size="4" class="ion-text-center">
+                    <h3>{{'total_seats' | translate}}</h3>
+                    <h2> 01</h2>
+                </ion-col>
+
+                <ion-col size="4" class="ion-text-end">
+                    <h3>{{'seat' | translate}}</h3>
+                    <h2>B3</h2>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col size="5">
+                    <h3>{{'passenger_name' | translate}}</h3>
+                    <h2>Sam Smith</h2>
+                </ion-col>
+                <ion-col size="2" class="ion-text-center">
+                    <h3>{{'age' | translate}}</h3>
+                    <h2>25</h2>
+                </ion-col>
+                <ion-col size="5" class="ion-text-end">
+                    <h3>{{'gender' | translate}}</h3>
+                    <h2>Male</h2>
+                </ion-col>
+            </ion-row>
+        </div>
+
+        <div class="container barcode_box">
+            <div class="bar_code">
+                <img src="assets/imgs/barcode.png">
+            </div>
+        </div>
+    </div>
+
+    <ion-button mode="md" size="large" shape="full" class="btn"> {{'dawnload_ticket' | translate}} </ion-button>
+</ion-content>

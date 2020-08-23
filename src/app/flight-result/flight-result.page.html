@@ -1,0 +1,2854 @@
+<ion-header class="bg_transparent">
+    <ion-toolbar>
+        <div class="d-flex" style="align-items: flex-start !important">
+            <ion-buttons slot="start">
+                <ion-back-button text="" icon="arrow-back-outline"></ion-back-button>
+            </ion-buttons>
+            <ion-title>
+                <h2>Houstone To Manhattan</h2>
+                <p class="d-flex">
+                    <span>{{'depart' | translate}} 23 Jul </span>
+                    <ion-icon></ion-icon>
+                    <span>1 {{'traveller' | translate}}</span>
+                    <ion-icon></ion-icon>
+                    <span>{{'economy' | translate}}</span>
+                </p>
+            </ion-title>
+        </div>
+    </ion-toolbar>
+    <div class="header_bg">
+        <img src="assets/imgs/flight.png">
+    </div>
+
+    <div class="tab_btn_box">
+        <ion-segment lines="none" mode="md" scrollable [(ngModel)]="ticket_price">
+            <ion-segment-button mode="ios" value="1">
+                <p><span>23 Jul</span>$ 185.50</p>
+            </ion-segment-button>
+            <ion-segment-button mode="ios" value="2">
+                <p><span>24 Jul</span>$ 175.50</p>
+            </ion-segment-button>
+            <ion-segment-button mode="ios" value="3">
+                <p><span>25 Jul</span>$ 165.50</p>
+            </ion-segment-button>
+            <ion-segment-button mode="ios" value="4">
+                <p><span>26 Jul</span>$ 200.50</p>
+            </ion-segment-button>
+            <ion-segment-button mode="ios" value="5">
+                <p><span>27 Jul</span>$ 250.50</p>
+            </ion-segment-button>
+            <ion-segment-button mode="ios" value="6">
+                <p><span>28 Jul</span>$ 105.50</p>
+            </ion-segment-button>
+            <ion-segment-button mode="ios" value="7">
+                <p><span>30 Jul</span>$ 150.50</p>
+            </ion-segment-button>
+            <ion-segment-button mode="ios" value="8">
+                <p><span>31 Jul</span>$ 155.50</p>
+            </ion-segment-button>
+            <ion-segment-button mode="ios" value="9">
+                <p><span>1 Aug</span>$ 125.50</p>
+            </ion-segment-button>
+        </ion-segment>
+    </div>
+</ion-header>
+
+<ion-content class="bg_color" fullscreen>
+    <div class="" [ngSwitch]="ticket_price">
+        <ion-list lines="none" *ngSwitchCase="'1'">
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_1.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_1.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_1.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_2.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_2.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_1.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_1.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_1.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_1.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_2.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_2.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_1.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_1.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_1.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_1.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_2.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_2.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_1.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_1.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_1.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_1.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_2.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_2.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_1.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+        </ion-list>
+
+
+
+        <ion-list lines="none" *ngSwitchCase="'2'">
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_2.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_2.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_1.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_1.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_1.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_1.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_2.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_2.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_1.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_1.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_1.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_1.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_2.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_2.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_1.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_1.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_1.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_1.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+        </ion-list>
+
+
+
+        <ion-list lines="none" *ngSwitchCase="'3'">
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_1.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_1.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_1.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+        </ion-list>
+
+        <ion-list lines="none" *ngSwitchCase="'4'">
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_1.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_2.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_2.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_1.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_1.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_1.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+        </ion-list>
+
+        <ion-list lines="none" *ngSwitchCase="'5'">
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_1.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_2.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_2.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_1.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_1.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_1.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+        </ion-list>
+
+        <ion-list lines="none" *ngSwitchCase="'6'">
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_1.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_1.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_2.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_2.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_1.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_1.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+        </ion-list>
+
+        <ion-list lines="none" *ngSwitchCase="'7'">
+
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_1.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_2.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_2.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_1.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_1.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_1.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+        </ion-list>
+
+        <ion-list lines="none" *ngSwitchCase="'8'">
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_1.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_1.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_2.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_2.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_1.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_1.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+        </ion-list>
+
+        <ion-list lines="none" *ngSwitchCase="'9'">
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_1.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_1.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_2.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_2.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_1.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_info()">
+                <div class="item_inner">
+                    <div class="item_header d-flex">
+                        <h2 class="d-flex">American Airlines<span>AA-1264</span></h2>
+                        <h3 class="ion-text-end">$ 158.50</h3>
+                    </div>
+                    <div class="item_containt d-flex">
+                        <div class="img_box center_img">
+                            <img src="assets/imgs/flight_1.png" class="crop_img">
+                        </div>
+                        <div class="text_box">
+                            <ion-row>
+                                <ion-col>
+                                    <h2>12:35 am</h2>
+                                    <h3>Houston</h3>
+                                </ion-col>
+                                <ion-col size="5" class="ion-text-center">
+                                    <h3><small>1 Stop</small></h3>
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle ion-text-start"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-center"></ion-icon>
+                                        <ion-icon class="zmdi zmdi-circle ion-text-end"></ion-icon>
+                                    </div>
+                                    <h3><small>2 hr 32 mins</small></h3>
+                                </ion-col>
+                                <ion-col class="ion-text-end">
+                                    <h2>12:35 am</h2>
+                                    <h3>Manhattan</h3>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+        </ion-list>
+    </div>
+</ion-content>
+
+<ion-footer class="ion-no-border">
+    <ion-button mode="md" size="large" shape="full" class="btn" (click)="filter()">
+        <ion-icon class="zmdi zmdi-tune ion-text-start"></ion-icon>
+        {{'sort_filters' | translate}}
+    </ion-button>
+</ion-footer>

@@ -1,0 +1,274 @@
+<ion-header class="bg_transparent">
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button text="" icon="arrow-back-outline"></ion-back-button>
+        </ion-buttons>
+        <ion-title></ion-title>
+    </ion-toolbar>
+    <div class="banner">
+        <div class="header_text">
+            <h2> <span>23 Jul 2019</span>
+                <ion-icon></ion-icon>
+                <span>1 {{'traveller' | translate}}</span>
+            </h2>
+        </div>
+        <div class="banner_bg center_img">
+            <img src="assets/imgs/train.png" class="crop_img">
+        </div>
+        <div class="form">
+            <ion-list lines="none">
+                <ion-item>
+                    <div class="item_inner d-flex">
+                        <ion-icon class="zmdi zmdi-long-arrow-up"></ion-icon>
+                        <div class="text_box">
+                            <h4>23 Jul, 12:35 am | Pickup Location</h4>
+                            <h2>Old City Market, Houstone, USA</h2>
+                        </div>
+                    </div>
+                </ion-item>
+                <div class="traveling_time d-flex">
+                    <div class="underline end"></div>
+                    <h3 class="end ion-text-end">&nbsp; &nbsp; &nbsp; &nbsp; 12 hr 35 mins | 8 Stop
+                    </h3>
+                </div>
+                <ion-item>
+                    <div class="item_inner d-flex">
+                        <ion-icon class="zmdi zmdi-long-arrow-down"></ion-icon>
+                        <div class="text_box">
+                            <h4>24 Jul, 12:45 pm | Drop Location</h4>
+                            <h2>White Church, Manhattan, USA</h2>
+                        </div>
+                    </div>
+                </ion-item>
+            </ion-list>
+        </div>
+
+        <div class="facilities d-flex">
+            <h2 class="d-flex">
+                <ion-icon class="zmdi zmdi-wifi-alt"></ion-icon>
+                WiFi
+            </h2>
+            <h2 class="d-flex">
+                <ion-icon class="zmdi zmdi-iridescent"></ion-icon>
+                AC
+            </h2>
+            <h2 class="d-flex disabled">
+                <ion-icon class="zmdi zmdi-input-power"></ion-icon>
+                Power
+            </h2>
+            <h2 class="d-flex">
+                <ion-icon class="zmdi zmdi-case"></ion-icon>
+                6 kg bag
+            </h2>
+        </div>
+    </div>
+</ion-header>
+
+<ion-content>
+    <div class="container">
+        <div class="flight_details d-flex">
+            <div class="flight_img center_img">
+                <img src="assets/imgs/bus_1.png" class="crop_img">
+            </div>
+            <div class="text">
+                <h2>Polo Travels</h2>
+                <h3>2X1(36)AC -Sleeper TATA</h3>
+            </div>
+
+            <div class="text end">
+                <h2 class="available">
+                    <ion-icon></ion-icon>{{'available' | translate}}
+                </h2>
+                <h2 class="booked">
+                    <ion-icon></ion-icon>{{'booked' | translate}}
+                </h2>
+            </div>
+        </div>
+
+        <ion-list lines="none">
+            <ion-item>
+                <div class="item_inner">
+                    <div class="bus_seats_label">
+                        <h3>Upper Seats</h3>
+                    </div>
+                    <div class="bus_seats">
+                        <div class="seats_row right">
+                            <div class="seat_type">
+                                <div class="seat booked">
+                                    <h2>B1</h2>
+                                </div>
+                                <div [ngClass]="seat1 ? 'seat selected' : 'seat'" (click)="toggleBusSeat1()">
+                                    <h2>B2</h2>
+                                </div>
+                            </div>
+                            <div class="seat_type">
+                                <div [ngClass]="seatB3 ? 'seat selected' : 'seat'" (click)="toggleBusSeatB3()">
+                                    <h2>B3</h2>
+                                </div>
+                                <div [ngClass]="seatB4 ? 'seat selected' : 'seat'" (click)="toggleBusSeatB4()">
+                                    <h2>B4</h2>
+                                </div>
+                            </div>
+                            <div class="seat_type">
+                                <div [ngClass]="seatB5 ? 'seat selected' : 'seat'" (click)="toggleBusSeatB5()">
+                                    <h2>B5</h2>
+                                </div>
+                                <div [ngClass]="seatB6 ? 'seat selected' : 'seat'" (click)="toggleBusSeatB6()">
+                                    <h2>B6</h2>
+                                </div>
+                            </div>
+                            <div class="seat_type">
+                                <div class="seat booked">
+                                    <h2>B7</h2>
+                                </div>
+                                <div [ngClass]="seatB8 ? 'seat selected' : 'seat'" (click)="toggleBusSeatB8()">
+                                    <h2>B8</h2>
+                                </div>
+                            </div>
+                            <div class="seat_type">
+                                <div [ngClass]="seatB9 ? 'seat selected' : 'seat'" (click)="toggleBusSeatB9()">
+                                    <h2>B9</h2>
+                                </div>
+                                <div class="seat booked">
+                                    <h2>B10</h2>
+                                </div>
+                            </div>
+                            <div class="seat_type last_seat">
+                                <div [ngClass]="seatB11 ? 'seat selected' : 'seat'" (click)="toggleBusSeatB11()">
+                                    <h2>B11</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="seats_row left_side">
+                            <div class="seat_type">
+                                <div [ngClass]="seatA1 ? 'seat selected' : 'seat'" (click)="toggleBusSeatA1()">
+                                    <h2>A1</h2>
+                                </div>
+                            </div>
+                            <div class="seat_type">
+                                <div [ngClass]="seatA2 ? 'seat selected' : 'seat'" (click)="toggleBusSeatA2()">
+                                    <h2>A2</h2>
+                                </div>
+                            </div>
+                            <div class="seat_type">
+                                <div class="seat booked">
+                                    <h2>A3</h2>
+                                </div>
+                            </div>
+                            <div class="seat_type">
+                                <div class="seat booked">
+                                    <h2>A4</h2>
+                                </div>
+                            </div>
+                            <div class="seat_type">
+                                <div [ngClass]="seatA5 ? 'seat selected' : 'seat'" (click)="toggleBusSeatA5()">
+                                    <h2>A5</h2>
+                                </div>
+                            </div>
+                            <div class="seat_type last_seat">
+                                <div [ngClass]="seatA6 ? 'seat selected' : 'seat'" (click)="toggleBusSeatA6()">
+                                    <h2>A6</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item>
+                <div class="item_inner">
+                    <div class="bus_seats_label">
+                        <h3>Lower Seats</h3>
+                    </div>
+                    <div class="bus_seats">
+                        <div class="seats_row right">
+                            <div class="seat_type">
+                                <div [ngClass]="seatB12 ? 'seat selected' : 'seat'" (click)="toggleBusSeatB12()">
+                                    <h2>B12</h2>
+                                </div>
+                                <div class="seat booked">
+                                    <h2>B13</h2>
+                                </div>
+                            </div>
+                            <div class="seat_type">
+                                <div [ngClass]="seatB14 ? 'seat selected' : 'seat'" (click)="toggleBusSeatB14()">
+                                    <h2>B14</h2>
+                                </div>
+                                <div class="seat booked">
+                                    <h2>B15</h2>
+                                </div>
+                            </div>
+                            <div class="seat_type">
+                                <div class="seat booked">
+                                    <h2>B16</h2>
+                                </div>
+                                <div class="seat booked">
+                                    <h2>B17</h2>
+                                </div>
+                            </div>
+                            <div class="seat_type">
+                                <div [ngClass]="seatB18 ? 'seat selected' : 'seat'" (click)="toggleBusSeatB18()">
+                                    <h2>B18</h2>
+                                </div>
+                                <div class="seat booked">
+                                    <h2>B19</h2>
+                                </div>
+                            </div>
+                            <div class="seat_type">
+                                <div [ngClass]="seatB20 ? 'seat selected' : 'seat'" (click)="toggleBusSeatB20()">
+                                    <h2>B20</h2>
+                                </div>
+                                <div class="seat booked">
+                                    <h2>B21</h2>
+                                </div>
+                            </div>
+                            <div class="seat_type last_seat">
+                                <div class="seat booked">
+                                    <h2>B22</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="seats_row left_side">
+                            <div class="seat_type">
+                                <div class="seat booked">
+                                    <h2>A7</h2>
+                                </div>
+                            </div>
+                            <div class="seat_type">
+                                <div [ngClass]="seatA8 ? 'seat selected' : 'seat'" (click)="toggleBusSeatA8()">
+                                    <h2>A8</h2>
+                                </div>
+                            </div>
+                            <div class="seat_type">
+                                <div [ngClass]="seatA9 ? 'seat selected' : 'seat'" (click)="toggleBusSeatA9()">
+                                    <h2>A9</h2>
+                                </div>
+                            </div>
+                            <div class="seat_type">
+                                <div class="seat booked">
+                                    <h2>A10</h2>
+                                </div>
+                            </div>
+                            <div class="seat_type">
+                                <div [ngClass]="seatA11 ? 'seat selected' : 'seat'" (click)="toggleBusSeatA11()">
+                                    <h2>A11</h2>
+                                </div>
+                            </div>
+                            <div class="seat_type last_seat">
+                                <div class="seat booked">
+                                    <h2>A12</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+        </ion-list>
+    </div>
+</ion-content>
+ 
+<ion-footer class="ion-no-border" (click)="bus_confirm_booking()">
+    <h2 class="d-flex">$ 90.50 <small>&nbsp;&nbsp;&nbsp;  1 {{'traveler' | translate}}</small><span class="end ion-text-uppercase">{{'book' | translate}} B3 Seat</span></h2>
+</ion-footer>

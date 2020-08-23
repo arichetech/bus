@@ -1,0 +1,155 @@
+<ion-header class="bg_transparent">
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button text="" icon="arrow-back-outline"></ion-back-button>
+        </ion-buttons>
+        <ion-title></ion-title>
+    </ion-toolbar>
+    <div class="banner">
+        <div class="header_text">
+            <h2>{{'search_homestays' | translate}}</h2>
+        </div>
+        <div class="banner_bg center_img">
+            <img src="assets/imgs/homestay.png" class="crop_img">
+        </div>
+        <div class="form">
+            <ion-list lines="none">
+                <ion-item>
+                    <div class="item_inner d-flex">
+                        <ion-icon class="zmdi zmdi-pin"></ion-icon>
+                        <div class="text_box">
+                            <h4>{{'where_are_you_going' | translate}}</h4>
+                            <h2>Manhattan, USA</h2>
+                        </div>
+                    </div>
+                </ion-item>
+            </ion-list>
+        </div>
+    </div>
+</ion-header>
+
+<ion-content fullscreen>
+    <div class="tab_container form">
+        <div class="tab_contant">
+            <ion-list lines="none">
+                <ion-card>
+                    <ion-row>
+                        <ion-col size="5">
+                            <h3>{{'check_in' | translate}}</h3>
+                            <ion-item (click)="calendar()">
+                                <div class="text">
+                                    <h2>23</h2>
+                                    <h4>Jul 2019 <span>Tuesday</span></h4>
+                                </div>
+                            </ion-item>
+                        </ion-col>
+                        <ion-col size="2"> </ion-col>
+                        <ion-col size="5">
+                            <h3>{{'check_out' | translate}}</h3>
+                            <ion-item (click)="calendar()">
+                                <div class="text">
+                                    <h2>27</h2>
+                                    <h4>Jul 2019 <span>Saturday</span></h4>
+                                </div>
+                            </ion-item>
+                        </ion-col>
+                    </ion-row>
+                </ion-card>
+
+                <ion-card>
+                    <h3>{{'guests' | translate}}</h3>
+                    <ion-row>
+                        <ion-col size="4">
+                            <ion-item>
+                                <div class="item_inner d-flex">
+                                    <ion-select [(ngModel)]="abult" interface="action-sheet">
+                                        <ion-select-option value="1">01</ion-select-option>
+                                        <ion-select-option value="2">02</ion-select-option>
+                                        <ion-select-option value="3">03</ion-select-option>
+                                        <ion-select-option value="4">04</ion-select-option>
+                                        <ion-select-option value="5">05</ion-select-option>
+                                    </ion-select>
+                                    <h6>{{'abult' | translate}}</h6>
+                                </div>
+                            </ion-item>
+                        </ion-col>
+
+                        <ion-col size="4">
+                            <ion-item>
+                                <div class="item_inner d-flex">
+                                    <ion-select [(ngModel)]="children" interface="action-sheet" icon="undefined">
+                                        <ion-select-option value="0">0</ion-select-option>
+                                        <ion-select-option value="1">01</ion-select-option>
+                                        <ion-select-option value="2">02</ion-select-option>
+                                        <ion-select-option value="3">03</ion-select-option>
+                                        <ion-select-option value="4">04</ion-select-option>
+                                        <ion-select-option value="5">05</ion-select-option>
+                                    </ion-select>
+                                    <h6>{{'children' | translate}}</h6>
+                                </div>
+                            </ion-item>
+                        </ion-col>
+
+                        <ion-col size="4">
+                            <ion-item>
+                                <div class="item_inner d-flex">
+                                    <ion-select [(ngModel)]="infrat" interface="action-sheet" icon="undefined">
+                                        <ion-select-option value="0">0</ion-select-option>
+                                        <ion-select-option value="1">01</ion-select-option>
+                                        <ion-select-option value="2">02</ion-select-option>
+                                        <ion-select-option value="3">03</ion-select-option>
+                                        <ion-select-option value="4">04</ion-select-option>
+                                        <ion-select-option value="5">05</ion-select-option>
+                                    </ion-select>
+                                    <h6>{{'infrat' | translate}}</h6>
+                                </div>
+                            </ion-item>
+                        </ion-col>
+                    </ion-row>
+                </ion-card>
+
+                <ion-card>
+                    <h3>{{'rooms' | translate}}</h3>
+                    <ion-row>
+                        <ion-col size="12">
+                            <ion-item>
+                                <ion-select [(ngModel)]="class" interface="action-sheet" icon="undefined">
+                                    <ion-select-option value="Economy">01</ion-select-option>
+                                    <ion-select-option value="2">02</ion-select-option>
+                                    <ion-select-option value="3">03</ion-select-option>
+                                    <ion-select-option value="4">04</ion-select-option>
+                                    <ion-select-option value="5">05</ion-select-option>
+                                </ion-select>
+                                <h6>{{'rooms' | translate}}</h6>
+                            </ion-item>
+                        </ion-col>
+                    </ion-row>
+                </ion-card>   
+                
+                <ion-card>
+                    <h3>{{'home_type' | translate}}</h3>
+                    <ion-row>
+                        <ion-col size="12">
+                            <ion-item>
+                                <ion-select [(ngModel)]="home_type" interface="action-sheet" icon="undefined">
+                                    <ion-select-option value="1">Any Home</ion-select-option>
+                                    <ion-select-option value="2">Bungalow</ion-select-option>
+                                    <ion-select-option value="3">Apartment</ion-select-option>
+                                    <ion-select-option value="4">Cabin</ion-select-option>
+                                    <ion-select-option value="5">Carriage/Coach House</ion-select-option>
+                                    <ion-select-option value="6">Cave Housee</ion-select-option>
+                                </ion-select> 
+                            </ion-item>
+                        </ion-col>
+                    </ion-row>
+                </ion-card>
+            </ion-list>
+        </div>
+    </div>
+</ion-content>
+
+<ion-footer class="ion-no-border">
+    <ion-button mode="md" size="large" shape="full" class="btn" (click)="list_of_homestay()">
+        {{'show_result' | translate}}
+    </ion-button>
+</ion-footer>

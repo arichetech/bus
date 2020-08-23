@@ -1,0 +1,107 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button text="" icon="arrow-back-outline"></ion-back-button>
+        </ion-buttons>
+        <ion-title> </ion-title>
+    </ion-toolbar>
+    <div class="header_text">
+        <h2>{{'checkout' | translate}}</h2>
+    </div>
+</ion-header>
+<ion-content>
+    <div class="payment_options">
+        <div class="container">
+            <h2>{{'select_payment_method' | translate}}</h2>
+        </div>
+        <ion-list lines="none">
+            <ion-radio-group>
+                <ion-item>
+                    <ion-label class="ion-text-center">
+                        <img src="assets/imgs/card.png">
+                        <h3>{{'credit_card' | translate}}</h3>
+                    </ion-label>
+                    <ion-radio value="card"></ion-radio>
+                </ion-item>
+                <ion-item>
+                    <ion-label class="ion-text-center">
+                        <img src="assets/imgs/paypal.png">
+                        <h3>{{'pay_pal' | translate}}</h3>
+                    </ion-label>
+                    <ion-radio value="pay_pal"></ion-radio>
+                </ion-item>
+                <ion-item>
+                    <ion-label class="ion-text-center">
+                        <img src="assets/imgs/payU.png">
+                        <h3>{{'pay_u_money' | translate}}</h3>
+                    </ion-label>
+                    <ion-radio value="pay_u_money"></ion-radio>
+                </ion-item>
+
+                <ion-item>
+                    <ion-label class="ion-text-center">
+                        <img src="assets/imgs/card.png">
+                        <h3>{{'credit_card' | translate}}</h3>
+                    </ion-label>
+                    <ion-radio value="card1"></ion-radio>
+                </ion-item>
+                <ion-item>
+                    <ion-label class="ion-text-center">
+                        <img src="assets/imgs/paypal.png">
+                        <h3>{{'pay_pal' | translate}}</h3>
+                    </ion-label>
+                    <ion-radio value="pay_pal1"></ion-radio>
+                </ion-item>
+                <ion-item>
+                    <ion-label class="ion-text-center">
+                        <img src="assets/imgs/payU.png">
+                        <h3>{{'pay_u_money' | translate}}</h3>
+                    </ion-label>
+                    <ion-radio value="pay_u_money1"></ion-radio>
+                </ion-item>
+            </ion-radio-group>
+        </ion-list>
+    </div>
+
+    <div class="form">
+        <ion-list lines="none">
+            <ion-item lines="none">
+                <div class="item_inner">
+                    <ion-label mode="md">{{'card_number' | translate}}</ion-label>
+                    <ion-input mode="md" type="text" value="+1 987 654 310"></ion-input>
+                </div>
+            </ion-item>
+            <ion-item lines="none">
+                <div class="item_inner">
+                    <ion-label mode="md">{{'name_on_card' | translate}}</ion-label>
+                    <ion-input mode="md" type="name" value="Sam Smith"></ion-input>
+                </div>
+            </ion-item>
+            <ion-row>
+                <ion-col size="6">
+                    <ion-item lines="none">
+                        <div class="item_inner">
+                            <ion-label mode="md">{{'expiry_date' | translate}}</ion-label>
+                            <ion-input mode="md" type="text" value="12/23"></ion-input>
+                        </div>
+                    </ion-item>
+                </ion-col>
+
+                <ion-col size="6">
+                    <ion-item lines="none">
+                        <div class="item_inner">
+                            <ion-label mode="md">{{'securuty_code' | translate}}</ion-label>
+                            <ion-input mode="md" type="text" value="779"></ion-input>
+                        </div>
+                    </ion-item>
+                </ion-col>
+            </ion-row>
+        </ion-list>
+    </div>
+</ion-content>
+
+<ion-footer class="ion-no-border">
+    <ion-button mode="md" size="large" shape="full" class="btn" (click)="homestay_booked()">
+        {{'pay' | translate}} $135.00
+    </ion-button>
+</ion-footer>

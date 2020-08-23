@@ -1,0 +1,153 @@
+<ion-header class="bg_transparent">
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button text="" icon="arrow-back-outline"></ion-back-button>
+        </ion-buttons>
+        <ion-title></ion-title>
+    </ion-toolbar>
+    <div class="banner">
+        <ion-slides autoplay="5000" loop="true" speed="500" pager dir="ltr">
+            <ion-slide>
+                <div class="slide_box">
+                    <div class="profile_img center_img">
+                        <img src="assets/imgs/house3.png" class="crop_img">
+                    </div>
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="slide_box">
+                    <div class="profile_img center_img">
+                        <img src="assets/imgs/house1.png" class="crop_img">
+                    </div>
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="slide_box">
+                    <div class="profile_img center_img">
+                        <img src="assets/imgs/house2.png" class="crop_img">
+                    </div>
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="slide_box">
+                    <div class="profile_img center_img">
+                        <img src="assets/imgs/house1.png" class="crop_img">
+                    </div>
+                </div>
+            </ion-slide>
+
+        </ion-slides>
+
+        <div class="banner_details">
+            <h2 class="d-flex"><span>White Heaven Villa </span>
+                <ion-badge class="end">4.7 <ion-icon class="zmdi zmdi-star"></ion-icon>
+                </ion-badge>
+            </h2>
+            <h3 class="d-flex"><span>City park, Manhattan</span> <span class="end">1.5k {{'people_rated' | translate}}</span></h3>
+        </div>
+    </div>
+</ion-header>
+
+<ion-content class="bg_color" fullscreen>
+    <ion-list lines="none">
+        <ion-item class="amenities">
+            <div class="item_inner">
+                <h2>{{'amenities' | translate}}</h2>
+                <div class="scroll-x">
+                    <div class="scroll_box ion-text-center">
+                        <ion-icon class="zmdi zmdi-wifi-alt"></ion-icon>
+                        <p>WiFi</p>
+                    </div>
+                    <div class="scroll_box ion-text-center">
+                        <ion-icon class="zmdi zmdi-iridescent"></ion-icon>
+                        <p>Ac</p>
+                    </div>
+                    <div class="scroll_box ion-text-center">
+                        <ion-icon class="zmdi zmdi-tv"></ion-icon>
+                        <p>Tv</p>
+                    </div>
+                    <div class="scroll_box ion-text-center">
+                        <ion-icon class="zmdi zmdi-invert-colors"></ion-icon>
+                        <p>Pool</p>
+                    </div>
+                    <div class="scroll_box ion-text-center">
+                        <ion-icon class="zmdi zmdi-cutlery"></ion-icon>
+                        <p>Kitchen</p>
+                    </div>
+                    <div class="scroll_box ion-text-center">
+                        <ion-icon class="zmdi zmdi-fire"></ion-icon>
+                        <p>Geyser</p>
+                    </div>
+
+                    <div class="scroll_box ion-text-center">
+                        <ion-icon class="zmdi zmdi-wifi-alt"></ion-icon>
+                        <p>WiFi</p>
+                    </div>
+                    <div class="scroll_box ion-text-center">
+                        <ion-icon class="zmdi zmdi-iridescent"></ion-icon>
+                        <p>Ac</p>
+                    </div>
+                    <div class="scroll_box ion-text-center">
+                        <ion-icon class="zmdi zmdi-tv"></ion-icon>
+                        <p>Tv</p>
+                    </div>
+                    <div class="scroll_box ion-text-center">
+                        <ion-icon class="zmdi zmdi-invert-colors"></ion-icon>
+                        <p>Pool</p>
+                    </div>
+                    <div class="scroll_box ion-text-center">
+                        <ion-icon class="zmdi zmdi-cutlery"></ion-icon>
+                        <p>Kitchen</p>
+                    </div>
+                    <div class="scroll_box ion-text-center">
+                        <ion-icon class="zmdi zmdi-fire"></ion-icon>
+                        <p>Geyser</p>
+                    </div>
+                </div>
+            </div>
+        </ion-item>
+
+        <ion-item class="about">
+            <div class="item_inner">
+                <h2>{{'about' | translate}}</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </p>
+            </div>
+        </ion-item>
+
+        <ion-item class="icon_container">
+            <div class="item_inner">
+                <ion-row>
+                    <ion-col size="3" (click)="homestay_map()">
+                        <div class="icon_box ion-text-center">
+                            <ion-icon class="zmdi zmdi-map"></ion-icon>
+                            <p>{{'location' | translate}}</p>
+                        </div>
+                    </ion-col>
+                    <ion-col size="3" (click)="homestay_review()">
+                        <div class="icon_box ion-text-center">
+                            <ion-icon class="zmdi zmdi-star"></ion-icon>
+                            <p>{{'reviews' | translate}}</p>
+                        </div>
+                    </ion-col>
+                    <ion-col size="3" (click)="homestay_photos()">
+                        <div class="icon_box ion-text-center">
+                            <ion-icon class="zmdi zmdi-image"></ion-icon>
+                            <p>{{'photos' | translate}}</p>
+                        </div>
+                    </ion-col>
+                    <ion-col size="3" (click)="list_of_homestay()">
+                        <div class="icon_box ion-text-center">
+                            <ion-icon class="zmdi zmdi-collection-text"></ion-icon>
+                            <p>{{'similar' | translate}}</p>
+                        </div>
+                    </ion-col>
+                </ion-row>
+            </div>
+        </ion-item>
+    </ion-list>
+</ion-content>
+
+<ion-footer class="ion-no-border" (click)="homestay_confirm_booking()">
+    <h2 class="d-flex">$120.00 <small>&nbsp;&nbsp;&nbsp; For 1 Guests</small><span class="end ion-text-uppercase">{{'book_now' | translate}}</span></h2>
+</ion-footer>

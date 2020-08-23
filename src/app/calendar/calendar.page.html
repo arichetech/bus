@@ -1,0 +1,27 @@
+<!--
+<ion-header>
+    <ion-toolbar>
+        <ion-title></ion-title>
+    </ion-toolbar>
+</ion-header>
+-->
+
+<ion-content fullscreen (click)="dismiss()">
+
+</ion-content>
+<ion-footer>
+    <ion-calendar [format]="'YYYY-MM-DD'"> </ion-calendar>
+    <ion-row>
+        <ion-col size="6" class="ion-no-padding">
+            <ion-button mode="md" size="large" shape="full" fill="clear" class="btn" (click)="dismiss()">
+                {{'cancel' | translate}}
+            </ion-button>
+        </ion-col>
+
+        <ion-col size="6" class="ion-no-padding">
+            <ion-button mode="md" size="large" shape="full" class="btn" (click)="dismiss()">
+                {{'ok' | translate}}
+            </ion-button>
+        </ion-col>
+    </ion-row>
+</ion-footer>

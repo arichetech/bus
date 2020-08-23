@@ -1,0 +1,94 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button text="" icon="arrow-back-outline"></ion-back-button>
+        </ion-buttons>
+        <ion-title>{{'cab_booked' | translate}}</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+
+    <div class="booking_receipt">
+        <div class="container receipt_header d-flex">
+            <div class="img_box center_img">
+                <img src="assets/imgs/2.png" class="crop_img">
+            </div>
+            <div class="text_box">
+                <h2>Opera Taxi Services</h2>
+                <h6 class="d-flex">City Park, Manhattan <span class="end">$105.00</span></h6>
+            </div>
+        </div>
+        <div class="container receipt_containt banner">
+            <div class="banner_bg center_img">
+                <img src="assets/imgs/cab.png">
+            </div>
+            <ion-row>
+                <ion-col size="5">
+                    <h3>{{'pick_up_location' | translate}}</h3>
+                    <h2>Houston, USA</h2>
+                </ion-col>
+                <ion-col size="2" class="ion-text-center">
+                    <ion-icon class="zmdi zmdi-arrow-right"></ion-icon>
+                </ion-col>
+                <ion-col size="5" class="ion-text-end">
+                    <h3>{{'drop_location' | translate}}</h3>
+                    <h2>Manhattan, USA</h2>
+                </ion-col>
+            </ion-row>
+        </div>
+        <div class="container receipt_containt">
+            <ion-row>
+                <ion-col size="6">
+                    <h3>{{'pick_up_date' | translate}}</h3>
+                    <h2>23 Jun</h2>
+                </ion-col>
+                <ion-col size="6" class="ion-text-end">
+                    <h3>{{'pick_up_time' | translate}}</h3>
+                    <h2>11:30 am</h2>
+                </ion-col>
+            </ion-row>
+
+            <ion-row>
+                <ion-col size="6">
+                    <h3>{{'seat_capacity' | translate}}</h3>
+                    <h2>4 {{'traveller' | translate}}</h2>
+                </ion-col>
+                <ion-col size="6" class="ion-text-end">
+                    <h3>{{'bags_allowed' | translate}}</h3> 
+                    <h2>2 {{'bags' | translate}}</h2>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col size="5">
+                    <h3>{{'passenger_name' | translate}}</h3>
+                    <h2>Sam Smith</h2>
+                </ion-col>
+                <ion-col size="2" class="ion-text-center">
+                    <h3>{{'age' | translate}}</h3>
+                    <h2>25</h2>
+                </ion-col>
+                <ion-col size="5" class="ion-text-end">
+                    <h3>{{'gender' | translate}}</h3>
+                    <h2>Male</h2>
+                </ion-col>
+            </ion-row>
+        </div>
+
+        <div class="container cab_info">
+            <ion-row>
+                <ion-col size="8">
+                    <h2>Maruti Swift</h2>
+                    <h3>Hatchback car</h3>
+                </ion-col>
+                <ion-col size="4" class="d-flex">
+                    <div class="img_box end">
+                        <img src="assets/imgs/car.png">
+                    </div>
+                </ion-col>
+            </ion-row>
+        </div>
+    </div>
+
+    <ion-button mode="md" size="large" shape="full" class="btn"> {{'call_cab_driver' | translate}} </ion-button>
+</ion-content>

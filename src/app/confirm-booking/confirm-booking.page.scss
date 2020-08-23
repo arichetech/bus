@@ -1,0 +1,136 @@
+ion-header ion-toolbar ion-title {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 15px !important;
+    text-align: center !important;
+}
+
+.banner {
+    position: relative;
+    overflow: hidden;
+    padding: 0 20px;
+    padding-bottom: 20px;
+
+    .flight_details {
+        margin-bottom: 30px;
+
+        .flight_img {
+            min-width: 34px;
+            width: 34px;
+            height: 34px;
+            border-radius: 5px;
+            margin-right: 13px;
+        }
+
+        .text {
+            h2 {
+                margin: 0;
+                font-size: 1rem;
+                font-weight: 700;
+                margin-bottom: 3px;
+                color: var(--text-balck);
+            }
+
+            h3 {
+                margin: 0;
+                font-size: .77rem;
+                font-weight: 400;
+                color: var(--text-light);
+            }
+        }
+    }
+
+
+    .form {
+        padding: 0; 
+
+        ion-list {
+            ion-item {
+                margin-bottom: 20px;
+
+                .item_inner {
+                    align-items: center !important;
+
+                    ion-icon {
+                        color: var(--primary);
+                        font-size: 1.2rem;
+                        min-width: 47px;
+                        top: 0;
+                        margin-top: 20px;
+                    }
+
+                    .text_box {
+                        width: 100%;
+
+                        h4 {
+                            margin: 0;
+                            color: var(--text-light);
+                            font-size: 0.8rem;
+                            font-weight: 500;
+                            padding-bottom: 3px;
+                        }
+
+                        h2 {
+                            margin: 0;
+                            color: var(--text-dark);
+                            font-weight: 500;
+                            font-size: 1.35rem;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    .containt {
+        ion-row {
+            margin: 0 -5px;
+            padding: 8px 0;
+
+            ion-col {
+
+                h3 {
+                    margin: 0;
+                    color: var(--text-light);
+                    font-size: 0.8rem;
+                    font-weight: 500;
+                    padding-bottom: 3px;
+                }
+
+                h2 {
+                    margin: 0;
+                    color: var(--text-dark);
+                    font-weight: 600;
+                    font-size: .95rem;
+                }
+            }
+        }
+    }
+}
+
+ion-footer {
+    background: var(--bg-color);
+
+    .payment_info {
+        padding: 20px 20px;
+
+        h1 {
+            margin: 0;
+            color: var(--text-dark);
+            font-size: 1.4rem;
+            font-weight: 500;
+            padding-bottom: 25px;
+        }
+
+        h2 {
+            margin: 0;
+            font-size: .98rem;
+            margin-bottom: 12px;
+            font-weight: 500;
+            color: var(--text-black);
+        }
+    }
+}

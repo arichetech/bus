@@ -1,0 +1,7 @@
+{
+  "name": "TripUp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

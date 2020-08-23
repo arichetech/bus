@@ -1,0 +1,90 @@
+<ion-header class="bg_transparent">
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button text="" icon="arrow-back-outline"></ion-back-button>
+        </ion-buttons>
+        <ion-title></ion-title>
+    </ion-toolbar>
+    <div class="banner">
+        <div class="header_text">
+            <h2>{{'search_holiday_packages' | translate}}</h2>
+        </div>
+        <div class="banner_bg center_img">
+            <img src="assets/imgs/holiday.png" class="crop_img">
+        </div>
+        <div class="form">
+            <ion-list lines="none">
+                <ion-item>
+                    <div class="item_inner d-flex">
+                        <ion-icon class="zmdi zmdi-gps-dot"></ion-icon>
+                        <div class="text_box">
+                            <h4>{{'from' | translate}}</h4>
+                            <h2>Houstone, USA</h2>
+                        </div>
+                    </div>
+                </ion-item>
+
+                <ion-item>
+                    <div class="item_inner d-flex">
+                        <ion-icon class="zmdi zmdi-pin"></ion-icon>
+                        <div class="text_box">
+                            <h4>{{'to' | translate}}</h4>
+                            <h2>Manhattan, USA</h2>
+                        </div>
+                    </div>
+                </ion-item>
+            </ion-list>
+        </div>
+    </div>
+</ion-header>
+
+<ion-content fullscreen>
+    <div class="tab_container form">
+        <div class="tab_contant">
+            <ion-list lines="none">
+                <ion-card>
+                    <h3>{{'select_month_of_travel' | translate}}</h3>
+                    <ion-row>
+                        <ion-col size="12">
+                            <ion-item>
+                                <div class="item_inner d-flex">
+                                    <ion-select [(ngModel)]="month" interface="action-sheet" icon="undefined">
+                                        <ion-select-option value="1">November 2019</ion-select-option>
+                                        <ion-select-option value="2">December 2019</ion-select-option>
+                                        <ion-select-option value="3">January 2020</ion-select-option>
+                                        <ion-select-option value="4">February 2020</ion-select-option>
+                                        <ion-select-option value="5">March 2020</ion-select-option>
+                                        <ion-select-option value="6">April 2020</ion-select-option>
+                                        <ion-select-option value="7">May 2020</ion-select-option>
+                                        <ion-select-option value="8">June 2020</ion-select-option>
+                                    </ion-select>
+                                    <ion-icon class="zmdi zmdi-caret-down end ion-text-end"></ion-icon>
+                                </div>
+                            </ion-item>
+                        </ion-col>
+                    </ion-row>
+                </ion-card>
+
+                <ion-card class="budget">
+                    <h3>{{'budget' | translate}}</h3>
+                    <ion-row>
+                        <ion-col size="12">
+                            <ion-item class="item-range">
+                                <div class="item_inner">
+                                    <ion-range mode="md" dualKnobs="true" min="-300" max="1000"  value="600" pin="true"></ion-range>
+                                    <h3 class="d-flex">$ 100 <span class="end">$ 1000</span></h3>
+                                </div>
+                            </ion-item>
+                        </ion-col>
+                    </ion-row>
+                </ion-card>
+            </ion-list>
+        </div>
+    </div>
+</ion-content>
+
+<ion-footer class="ion-no-border">
+    <ion-button mode="md" size="large" shape="full" class="btn" (click)="holiday_list()">
+        {{'show_result' | translate}}
+    </ion-button>
+</ion-footer>

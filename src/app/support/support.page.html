@@ -1,0 +1,61 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button text="" icon="arrow-back-outline"></ion-back-button>
+        </ion-buttons>
+        <ion-title> </ion-title>
+    </ion-toolbar>
+    <div class="header_text">
+        <h2> {{'we_are_happy_to' | translate}}<br>{{'hear_from_you' | translate}}</h2>
+        <h3>{{'let_us_know_your_queries_feedback' | translate}}</h3>
+    </div>
+</ion-header>
+
+<ion-content fullscreen>
+    <div class="banner">
+        <ion-row>
+            <ion-col size="6">
+                <ion-button mode="md" size="large" shape="block" fill="outline" class="btn">
+                    <ion-icon class="zmdi zmdi-local-phone"></ion-icon>
+                    {{'call_us' | translate}}
+                </ion-button>
+            </ion-col>
+            <ion-col size="6">
+                <ion-button mode="md" size="large" shape="block" class="btn">
+                    <ion-icon class="zmdi zmdi-email"></ion-icon>
+                    {{'mail_us' | translate}}
+                </ion-button>
+            </ion-col>
+        </ion-row>
+    </div>
+
+    <div class="form">
+        <h2> {{'or_send_your_message' | translate}}</h2>
+        <ion-list lines="none">
+            <ion-item lines="none">
+                <div class="item_inner">
+                    <ion-label mode="md">{{'full_name' | translate}}</ion-label>
+                    <ion-input mode="md" type="text" value="Sam Smith"></ion-input>
+                </div>
+            </ion-item>
+
+            <ion-item lines="none">
+                <div class="item_inner">
+                    <ion-label mode="md">{{'contact_number' | translate}}</ion-label>
+                    <ion-input mode="md" type="text" value="+1 987 654 3210"></ion-input> 
+                </div>
+            </ion-item>
+
+            <ion-item lines="none">
+                <div class="item_inner">
+                    <ion-label mode="md">{{'your_message' | translate}}</ion-label>
+                    <ion-textarea rows="1" mode="md" type="text" value="{{'write_your_message' | translate}}"></ion-textarea>
+                </div>
+            </ion-item>
+        </ion-list>
+    </div>
+</ion-content>
+
+<ion-footer class="ion-no-border">
+    <ion-button mode="md" size="large" shape="full" class="btn">{{'submit_now' | translate}}</ion-button>
+</ion-footer>

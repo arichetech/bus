@@ -1,0 +1,145 @@
+<ion-header class="bg_transparent">
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button text="" icon="arrow-back-outline"></ion-back-button>
+        </ion-buttons>
+        <ion-title></ion-title>
+    </ion-toolbar>
+    <div class="banner">
+        <ion-slides autoplay="5000" loop="true" speed="500" pager dir="ltr">
+            <ion-slide>
+                <div class="slide_box">
+                    <div class="profile_img center_img">
+                        <img src="assets/imgs/ho1.png" class="crop_img">
+                    </div>
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="slide_box">
+                    <div class="profile_img center_img">
+                        <img src="assets/imgs/ho2.png" class="crop_img">
+                    </div>
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="slide_box">
+                    <div class="profile_img center_img">
+                        <img src="assets/imgs/ho3.png" class="crop_img">
+                    </div>
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="slide_box">
+                    <div class="profile_img center_img">
+                        <img src="assets/imgs/ho1.png" class="crop_img">
+                    </div>
+                </div>
+            </ion-slide>
+        </ion-slides>
+
+        <div class="banner_details">
+            <h2 class="d-flex"><span>Manhattan Beaches</span>
+                <ion-badge class="end">3 D - 4 N</ion-badge>
+            </h2>
+            <h3 class="d-flex"><span>Rockaway Beach, Fort Tulden, Brighton Beach</span></h3>
+        </div>
+    </div>
+</ion-header>
+
+<ion-content class="bg_color" fullscreen>
+    <ion-list lines="none">
+        <ion-item class="amenities">
+            <div class="item_inner">
+                <h2>{{'facilities' | translate}}</h2>
+                <div class="scroll-x">
+                    <div class="scroll_box ion-text-center">
+                        <ion-icon class="zmdi zmdi-cutlery"></ion-icon>
+                        <p>Meals</p>
+                    </div>
+                    <div class="scroll_box ion-text-center">
+                        <ion-icon class="zmdi zmdi-flight-takeoff"></ion-icon>
+                        <p>Air-fair</p>
+                    </div>
+                    <div class="scroll_box ion-text-center">
+                        <ion-icon class="zmdi zmdi-car"></ion-icon>
+                        <p>Transfer</p>
+                    </div>
+                    <div class="scroll_box ion-text-center">
+                        <ion-icon class="zmdi zmdi-city-alt"></ion-icon>
+                        <p>Hotel</p>
+                    </div>
+                    <div class="scroll_box ion-text-center">
+                        <ion-icon class="zmdi zmdi-camera"></ion-icon>
+                        <p>Sightseeing</p>
+                    </div>
+                    <div class="scroll_box ion-text-center">
+                        <ion-icon class="zmdi zmdi-cutlery"></ion-icon>
+                        <p>Meals</p>
+                    </div>
+                    <div class="scroll_box ion-text-center">
+                        <ion-icon class="zmdi zmdi-flight-takeoff"></ion-icon>
+                        <p>Air-fair</p>
+                    </div>
+                    <div class="scroll_box ion-text-center">
+                        <ion-icon class="zmdi zmdi-car"></ion-icon>
+                        <p>Transfer</p>
+                    </div>
+                    <div class="scroll_box ion-text-center">
+                        <ion-icon class="zmdi zmdi-city-alt"></ion-icon>
+                        <p>Hotel</p>
+                    </div>
+                    <div class="scroll_box ion-text-center">
+                        <ion-icon class="zmdi zmdi-camera"></ion-icon>
+                        <p>Sightseeing</p>
+                    </div>
+                </div>
+            </div>
+        </ion-item>
+
+        <ion-item class="travellers">
+            <p class="d-flex">
+                <span>2 {{'travellers' | translate}}</span>
+                <ion-icon></ion-icon>
+                <span>$250 - $350</span>
+                <span class="end">{{'change' | translate}}</span>
+            </p>
+        </ion-item>
+
+        <ion-segment [(ngModel)]="booking_day" lines="none" mode="md">
+            <ion-segment-button class="ion-text-start" value="day_a" mode="md">
+                <ion-label>{{'day' | translate}} 1</ion-label>
+            </ion-segment-button>
+            <ion-segment-button class="ion-text-start" value="day_b" mode="md">
+                <ion-label>{{'day' | translate}} 2</ion-label>
+            </ion-segment-button>
+            <ion-segment-button class="ion-text-start" value="day_c" mode="md">
+                <ion-label>{{'day' | translate}} 3</ion-label>
+            </ion-segment-button>
+        </ion-segment>
+
+        <ion-item [ngSwitch]="booking_day" class="tab_container">
+            <div class="item_inner">
+                <div class="tab_containt" *ngSwitchCase="'day_a'">
+                    <h2>- Pick-up from Air Port</h2>
+                    <h2>- Drop at hotel <span> Silver Leaf Manhattan</span></h2>
+                    <h2>- Breakfast at Hotel</h2>
+                    <h2>- At evening sightseeing at beach</h2>
+                    <h2>- Candle light dinner at beach resort</h2>
+                </div>
+                <div class="tab_containt" *ngSwitchCase="'day_b'">
+                    <h2>- At evening sightseeing at beach</h2>
+                    <h2>- Candle light dinner at beach resort</h2>
+                </div>
+                <div class="tab_containt" *ngSwitchCase="'day_c'">
+                    <h2>- Breakfast at Hotel</h2>
+                    <h2>- At evening sightseeing at beach</h2>
+                    <h2>- Candle light dinner at beach resort</h2>
+                </div>
+            </div>
+        </ion-item>
+    </ion-list>
+</ion-content>
+
+<ion-footer class="ion-no-border" (click)="holiday_confirm_booking()">
+    <h2 class="d-flex">$250.00 <small>&nbsp;&nbsp;&nbsp; {{'per_person' | translate}}</small><span class="end ion-text-uppercase">{{'book_now' | translate}}</span></h2>
+</ion-footer>

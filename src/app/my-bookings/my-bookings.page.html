@@ -1,0 +1,1610 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>{{'my_bookings' | translate}}</ion-title>
+    </ion-toolbar>
+    <ion-segment mode="ios" [(ngModel)]="bookings" scrollable>
+        <ion-segment-button mode="ios" value="all_bookings">
+            <ion-label> {{'all_bookings' | translate}}</ion-label>
+        </ion-segment-button>
+        <ion-segment-button mode="ios" value="flight">
+            <ion-label> {{'flight' | translate}}</ion-label>
+        </ion-segment-button>
+        <ion-segment-button mode="ios" value="train">
+            <ion-label> {{'train' | translate}}</ion-label>
+        </ion-segment-button>
+        <ion-segment-button mode="ios" value="hotel">
+            <ion-label> {{'hotel' | translate}}</ion-label>
+        </ion-segment-button>
+        <ion-segment-button mode="ios" value="bus">
+            <ion-label> {{'bus' | translate}}</ion-label>
+        </ion-segment-button>
+        <ion-segment-button mode="ios" value="holiday">
+            <ion-label> {{'holiday' | translate}}</ion-label>
+        </ion-segment-button>
+        <ion-segment-button mode="ios" value="homestays">
+            <ion-label> {{'homestays' | translate}}</ion-label>
+        </ion-segment-button>
+    </ion-segment>
+</ion-header>
+
+<ion-content class="bg_color" fullscreen>
+    <div [ngSwitch]="bookings">
+        <ion-list lines="none" *ngSwitchCase="'all_bookings'">
+            <ion-item (click)="flight_ticket()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'flight_booked' | translate}}<span class="end">$165.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_flight.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>American Airlines</h3>
+                            <p>Houatone, USA to Manhattan, USA</p>
+                            <p>23 Jul, 12:35am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item (click)="hotel_booked()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'hotel_booked' | translate}}<span class="end">$100.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_hotels.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>Hotel Sky Garden</h3>
+                            <p>City park, Manthattan</p>
+                            <p>23 Jun, 11:00 am - 24 Jun, 10:00 am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item (click)="tain_ticket()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'train_booked' | translate}}<span class="end">$35.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_train.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>American Superfast express</h3>
+                            <p>Houatone, USA to Manhattan, USA</p>
+                            <p>23 Jul, 12:35am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item (click)="holiday_booked()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'holiday_booked' | translate}}<span class="end">$250.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_holiday.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>Manhattan Beaches</h3>
+                            <p>Rockaway Beach, Fort Tulden, Brighton Beach</p>
+                            <p>22 Nov - 25 Nov (3D 4N)</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item (click)="bus_ticket()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'bus_booked' | translate}}<span class="end">$90.50</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_bus.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>Polo Travels</h3>
+                            <p>Old City Market To White Church</p>
+                            <p>23 Jul, 12:35am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item (click)="flight_ticket()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'flight_booked' | translate}}<span class="end">$165.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_flight.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>American Airlines</h3>
+                            <p>Houatone, USA to Manhattan, USA</p>
+                            <p>23 Jul, 12:35am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+
+
+            <ion-item (click)="hotel_booked()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'hotel_booked' | translate}}<span class="end">$100.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_hotels.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>Hotel Sky Garden</h3>
+                            <p>City park, Manthattan</p>
+                            <p>23 Jun, 11:00 am - 24 Jun, 10:00 am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item (click)="tain_ticket()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'train_booked' | translate}}<span class="end">$35.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_train.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>American Superfast express</h3>
+                            <p>Houatone, USA to Manhattan, USA</p>
+                            <p>23 Jul, 12:35am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item (click)="holiday_booked()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'holiday_booked' | translate}}<span class="end">$250.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_holiday.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>Hotel Sky Garden</h3>
+                            <p>Rockaway Beach, Fort Tulden, Brighton Beach</p>
+                            <p>22 Nov - 25 Nov (3D 4N)</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item (click)="bus_ticket()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'bus_booked' | translate}}<span class="end">$90.50</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_bus.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>Polo Travels</h3>
+                            <p>Old City Market To White Church</p>
+                            <p>23 Jul, 12:35am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+        </ion-list>
+
+        <ion-list lines="none" *ngSwitchCase="'flight'">
+            <ion-item (click)="flight_ticket()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'flight_booked' | translate}}<span class="end">$165.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_flight.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>American Airlines</h3>
+                            <p>Houatone, USA to Manhattan, USA</p>
+                            <p>23 Jul, 12:35am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_ticket()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'flight_booked' | translate}}<span class="end">$165.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_flight.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>American Airlines</h3>
+                            <p>Houatone, USA to Manhattan, USA</p>
+                            <p>23 Jul, 12:35am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_ticket()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'flight_booked' | translate}}<span class="end">$165.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_flight.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>American Airlines</h3>
+                            <p>Houatone, USA to Manhattan, USA</p>
+                            <p>23 Jul, 12:35am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_ticket()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'flight_booked' | translate}}<span class="end">$165.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_flight.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>American Airlines</h3>
+                            <p>Houatone, USA to Manhattan, USA</p>
+                            <p>23 Jul, 12:35am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+        </ion-list>
+
+        <ion-list lines="none" *ngSwitchCase="'bus'">
+            <ion-item (click)="bus_ticket()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'bus_booked' | translate}}<span class="end">$90.50</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_bus.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>Polo Travels</h3>
+                            <p>Old City Market To White Church</p>
+                            <p>23 Jul, 12:35am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="bus_ticket()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'bus_booked' | translate}}<span class="end">$90.50</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_bus.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>Polo Travels</h3>
+                            <p>Old City Market To White Church</p>
+                            <p>23 Jul, 12:35am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="bus_ticket()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'bus_booked' | translate}}<span class="end">$90.50</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_bus.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>Polo Travels</h3>
+                            <p>Old City Market To White Church</p>
+                            <p>23 Jul, 12:35am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="bus_ticket()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'bus_booked' | translate}}<span class="end">$90.50</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_bus.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>Polo Travels</h3>
+                            <p>Old City Market To White Church</p>
+                            <p>23 Jul, 12:35am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="bus_ticket()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'bus_booked' | translate}}<span class="end">$90.50</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_bus.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>Polo Travels</h3>
+                            <p>Old City Market To White Church</p>
+                            <p>23 Jul, 12:35am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="bus_ticket()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'bus_booked' | translate}}<span class="end">$90.50</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_bus.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>Polo Travels</h3>
+                            <p>Old City Market To White Church</p>
+                            <p>23 Jul, 12:35am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_ticket()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'flight_booked' | translate}}<span class="end">$165.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_flight.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>American Airlines</h3>
+                            <p>Houatone, USA to Manhattan, USA</p>
+                            <p>23 Jul, 12:35am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item (click)="hotel_booked()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'hotel_booked' | translate}}<span class="end">$100.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_hotels.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>Hotel Sky Garden</h3>
+                            <p>City park, Manthattan</p>
+                            <p>23 Jun, 11:00 am - 24 Jun, 10:00 am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item (click)="tain_ticket()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'train_booked' | translate}}<span class="end">$35.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_train.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>American Superfast express</h3>
+                            <p>Houatone, USA to Manhattan, USA</p>
+                            <p>23 Jul, 12:35am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item (click)="holiday_booked()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'holiday_booked' | translate}}<span class="end">$250.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_holiday.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>Manhattan Beaches</h3>
+                            <p>Rockaway Beach, Fort Tulden, Brighton Beach</p>
+                            <p>22 Nov - 25 Nov (3D 4N)</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item (click)="bus_ticket()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'bus_booked' | translate}}<span class="end">$90.50</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_bus.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>Polo Travels</h3>
+                            <p>Old City Market To White Church</p>
+                            <p>23 Jul, 12:35am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item (click)="flight_ticket()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'flight_booked' | translate}}<span class="end">$165.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_flight.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>American Airlines</h3>
+                            <p>Houatone, USA to Manhattan, USA</p>
+                            <p>23 Jul, 12:35am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+
+
+            <ion-item (click)="hotel_booked()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'hotel_booked' | translate}}<span class="end">$100.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_hotels.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>Hotel Sky Garden</h3>
+                            <p>City park, Manthattan</p>
+                            <p>23 Jun, 11:00 am - 24 Jun, 10:00 am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item (click)="tain_ticket()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'train_booked' | translate}}<span class="end">$35.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_train.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>American Superfast express</h3>
+                            <p>Houatone, USA to Manhattan, USA</p>
+                            <p>23 Jul, 12:35am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item (click)="holiday_booked()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'holiday_booked' | translate}}<span class="end">$250.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_holiday.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>Hotel Sky Garden</h3>
+                            <p>Rockaway Beach, Fort Tulden, Brighton Beach</p>
+                            <p>22 Nov - 25 Nov (3D 4N)</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item (click)="bus_ticket()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'bus_booked' | translate}}<span class="end">$90.50</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_bus.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>Polo Travels</h3>
+                            <p>Old City Market To White Church</p>
+                            <p>23 Jul, 12:35am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+        </ion-list>
+
+        <ion-list lines="none" *ngSwitchCase="'flight'">
+            <ion-item (click)="flight_ticket()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'flight_booked' | translate}}<span class="end">$165.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_flight.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>American Airlines</h3>
+                            <p>Houatone, USA to Manhattan, USA</p>
+                            <p>23 Jul, 12:35am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_ticket()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'flight_booked' | translate}}<span class="end">$165.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_flight.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>American Airlines</h3>
+                            <p>Houatone, USA to Manhattan, USA</p>
+                            <p>23 Jul, 12:35am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_ticket()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'flight_booked' | translate}}<span class="end">$165.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_flight.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>American Airlines</h3>
+                            <p>Houatone, USA to Manhattan, USA</p>
+                            <p>23 Jul, 12:35am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="flight_ticket()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'flight_booked' | translate}}<span class="end">$165.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_flight.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>American Airlines</h3>
+                            <p>Houatone, USA to Manhattan, USA</p>
+                            <p>23 Jul, 12:35am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+        </ion-list>
+
+        <ion-list lines="none" *ngSwitchCase="'bus'">
+            <ion-item (click)="bus_ticket()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'bus_booked' | translate}}<span class="end">$90.50</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_bus.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>Polo Travels</h3>
+                            <p>Old City Market To White Church</p>
+                            <p>23 Jul, 12:35am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="bus_ticket()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'bus_booked' | translate}}<span class="end">$90.50</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_bus.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>Polo Travels</h3>
+                            <p>Old City Market To White Church</p>
+                            <p>23 Jul, 12:35am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="bus_ticket()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'bus_booked' | translate}}<span class="end">$90.50</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_bus.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>Polo Travels</h3>
+                            <p>Old City Market To White Church</p>
+                            <p>23 Jul, 12:35am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="bus_ticket()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'bus_booked' | translate}}<span class="end">$90.50</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_bus.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>Polo Travels</h3>
+                            <p>Old City Market To White Church</p>
+                            <p>23 Jul, 12:35am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="bus_ticket()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'bus_booked' | translate}}<span class="end">$90.50</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_bus.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>Polo Travels</h3>
+                            <p>Old City Market To White Church</p>
+                            <p>23 Jul, 12:35am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="bus_ticket()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'bus_booked' | translate}}<span class="end">$90.50</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_bus.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>Polo Travels</h3>
+                            <p>Old City Market To White Church</p>
+                            <p>23 Jul, 12:35am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+
+        </ion-list>
+
+
+        <ion-list lines="none" *ngSwitchCase="'train'">
+            <ion-item (click)="tain_ticket()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'train_booked' | translate}}<span class="end">$35.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_train.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>American Superfast express</h3>
+                            <p>Houatone, USA to Manhattan, USA</p>
+                            <p>23 Jul, 12:35am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="tain_ticket()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'train_booked' | translate}}<span class="end">$35.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_train.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>American Superfast express</h3>
+                            <p>Houatone, USA to Manhattan, USA</p>
+                            <p>23 Jul, 12:35am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="tain_ticket()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'train_booked' | translate}}<span class="end">$35.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_train.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>American Superfast express</h3>
+                            <p>Houatone, USA to Manhattan, USA</p>
+                            <p>23 Jul, 12:35am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="tain_ticket()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'train_booked' | translate}}<span class="end">$35.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_train.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>American Superfast express</h3>
+                            <p>Houatone, USA to Manhattan, USA</p>
+                            <p>23 Jul, 12:35am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+        </ion-list>
+
+
+        <ion-list lines="none" *ngSwitchCase="'hotel'">
+            <ion-item (click)="hotel_booked()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'hotel_booked' | translate}}<span class="end">$100.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_hotels.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>Hotel Sky Garden</h3>
+                            <p>City park, Manthattan</p>
+                            <p>23 Jun, 11:00 am - 24 Jun, 10:00 am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="hotel_booked()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'hotel_booked' | translate}}<span class="end">$100.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_hotels.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>Hotel Sky Garden</h3>
+                            <p>City park, Manthattan</p>
+                            <p>23 Jun, 11:00 am - 24 Jun, 10:00 am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item (click)="hotel_booked()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'hotel_booked' | translate}}<span class="end">$100.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_hotels.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>Hotel Sky Garden</h3>
+                            <p>City park, Manthattan</p>
+                            <p>23 Jun, 11:00 am - 24 Jun, 10:00 am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="hotel_booked()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'hotel_booked' | translate}}<span class="end">$100.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_hotels.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>Hotel Sky Garden</h3>
+                            <p>City park, Manthattan</p>
+                            <p>23 Jun, 11:00 am - 24 Jun, 10:00 am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="hotel_booked()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'hotel_booked' | translate}}<span class="end">$100.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_hotels.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>Hotel Sky Garden</h3>
+                            <p>City park, Manthattan</p>
+                            <p>23 Jun, 11:00 am - 24 Jun, 10:00 am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="hotel_booked()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'hotel_booked' | translate}}<span class="end">$100.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_hotels.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>Hotel Sky Garden</h3>
+                            <p>City park, Manthattan</p>
+                            <p>23 Jun, 11:00 am - 24 Jun, 10:00 am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="hotel_booked()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'hotel_booked' | translate}}<span class="end">$100.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_hotels.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>Hotel Sky Garden</h3>
+                            <p>City park, Manthattan</p>
+                            <p>23 Jun, 11:00 am - 24 Jun, 10:00 am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="hotel_booked()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'hotel_booked' | translate}}<span class="end">$100.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_hotels.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>Hotel Sky Garden</h3>
+                            <p>City park, Manthattan</p>
+                            <p>23 Jun, 11:00 am - 24 Jun, 10:00 am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+             <ion-item (click)="tain_ticket()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'train_booked' | translate}}<span class="end">$35.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_train.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>American Superfast express</h3>
+                            <p>Houatone, USA to Manhattan, USA</p>
+                            <p>23 Jul, 12:35am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="tain_ticket()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'train_booked' | translate}}<span class="end">$35.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_train.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>American Superfast express</h3>
+                            <p>Houatone, USA to Manhattan, USA</p>
+                            <p>23 Jul, 12:35am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="tain_ticket()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'train_booked' | translate}}<span class="end">$35.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_train.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>American Superfast express</h3>
+                            <p>Houatone, USA to Manhattan, USA</p>
+                            <p>23 Jul, 12:35am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="tain_ticket()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'train_booked' | translate}}<span class="end">$35.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_train.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>American Superfast express</h3>
+                            <p>Houatone, USA to Manhattan, USA</p>
+                            <p>23 Jul, 12:35am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+        </ion-list>
+
+
+        <ion-list lines="none" *ngSwitchCase="'hotel'">
+            <ion-item (click)="hotel_booked()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'hotel_booked' | translate}}<span class="end">$100.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_hotels.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>Hotel Sky Garden</h3>
+                            <p>City park, Manthattan</p>
+                            <p>23 Jun, 11:00 am - 24 Jun, 10:00 am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="hotel_booked()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'hotel_booked' | translate}}<span class="end">$100.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_hotels.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>Hotel Sky Garden</h3>
+                            <p>City park, Manthattan</p>
+                            <p>23 Jun, 11:00 am - 24 Jun, 10:00 am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item (click)="hotel_booked()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'hotel_booked' | translate}}<span class="end">$100.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_hotels.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>Hotel Sky Garden</h3>
+                            <p>City park, Manthattan</p>
+                            <p>23 Jun, 11:00 am - 24 Jun, 10:00 am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="hotel_booked()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'hotel_booked' | translate}}<span class="end">$100.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_hotels.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>Hotel Sky Garden</h3>
+                            <p>City park, Manthattan</p>
+                            <p>23 Jun, 11:00 am - 24 Jun, 10:00 am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="hotel_booked()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'hotel_booked' | translate}}<span class="end">$100.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_hotels.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>Hotel Sky Garden</h3>
+                            <p>City park, Manthattan</p>
+                            <p>23 Jun, 11:00 am - 24 Jun, 10:00 am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="hotel_booked()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'hotel_booked' | translate}}<span class="end">$100.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_hotels.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>Hotel Sky Garden</h3>
+                            <p>City park, Manthattan</p>
+                            <p>23 Jun, 11:00 am - 24 Jun, 10:00 am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="hotel_booked()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'hotel_booked' | translate}}<span class="end">$100.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_hotels.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>Hotel Sky Garden</h3>
+                            <p>City park, Manthattan</p>
+                            <p>23 Jun, 11:00 am - 24 Jun, 10:00 am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="hotel_booked()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'hotel_booked' | translate}}<span class="end">$100.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_hotels.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>Hotel Sky Garden</h3>
+                            <p>City park, Manthattan</p>
+                            <p>23 Jun, 11:00 am - 24 Jun, 10:00 am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+
+             <ion-item (click)="tain_ticket()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'train_booked' | translate}}<span class="end">$35.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_train.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>American Superfast express</h3>
+                            <p>Houatone, USA to Manhattan, USA</p>
+                            <p>23 Jul, 12:35am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="tain_ticket()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'train_booked' | translate}}<span class="end">$35.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_train.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>American Superfast express</h3>
+                            <p>Houatone, USA to Manhattan, USA</p>
+                            <p>23 Jul, 12:35am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="tain_ticket()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'train_booked' | translate}}<span class="end">$35.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_train.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>American Superfast express</h3>
+                            <p>Houatone, USA to Manhattan, USA</p>
+                            <p>23 Jul, 12:35am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="tain_ticket()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'train_booked' | translate}}<span class="end">$35.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_train.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>American Superfast express</h3>
+                            <p>Houatone, USA to Manhattan, USA</p>
+                            <p>23 Jul, 12:35am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+        </ion-list>
+
+
+        <ion-list lines="none" *ngSwitchCase="'hotel'">
+            <ion-item (click)="hotel_booked()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'hotel_booked' | translate}}<span class="end">$100.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_hotels.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>Hotel Sky Garden</h3>
+                            <p>City park, Manthattan</p>
+                            <p>23 Jun, 11:00 am - 24 Jun, 10:00 am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="hotel_booked()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'hotel_booked' | translate}}<span class="end">$100.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_hotels.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>Hotel Sky Garden</h3>
+                            <p>City park, Manthattan</p>
+                            <p>23 Jun, 11:00 am - 24 Jun, 10:00 am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item (click)="hotel_booked()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'hotel_booked' | translate}}<span class="end">$100.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_hotels.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>Hotel Sky Garden</h3>
+                            <p>City park, Manthattan</p>
+                            <p>23 Jun, 11:00 am - 24 Jun, 10:00 am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="hotel_booked()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'hotel_booked' | translate}}<span class="end">$100.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_hotels.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>Hotel Sky Garden</h3>
+                            <p>City park, Manthattan</p>
+                            <p>23 Jun, 11:00 am - 24 Jun, 10:00 am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="hotel_booked()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'hotel_booked' | translate}}<span class="end">$100.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_hotels.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>Hotel Sky Garden</h3>
+                            <p>City park, Manthattan</p>
+                            <p>23 Jun, 11:00 am - 24 Jun, 10:00 am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="hotel_booked()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'hotel_booked' | translate}}<span class="end">$100.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_hotels.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>Hotel Sky Garden</h3>
+                            <p>City park, Manthattan</p>
+                            <p>23 Jun, 11:00 am - 24 Jun, 10:00 am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="hotel_booked()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'hotel_booked' | translate}}<span class="end">$100.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_hotels.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>Hotel Sky Garden</h3>
+                            <p>City park, Manthattan</p>
+                            <p>23 Jun, 11:00 am - 24 Jun, 10:00 am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="hotel_booked()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'hotel_booked' | translate}}<span class="end">$100.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_hotels.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>Hotel Sky Garden</h3>
+                            <p>City park, Manthattan</p>
+                            <p>23 Jun, 11:00 am - 24 Jun, 10:00 am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+
+
+        </ion-list>
+
+
+        <ion-list lines="none" *ngSwitchCase="'holiday'">
+            <ion-item (click)="holiday_booked()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'holiday_booked' | translate}}<span class="end">$250.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_holiday.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>Manhattan Beaches</h3>
+                            <p>Rockaway Beach, Fort Tulden, Brighton Beach</p>
+                            <p>22 Nov - 25 Nov (3D 4N)</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="holiday_booked()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'holiday_booked' | translate}}<span class="end">$250.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_holiday.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>Manhattan Beaches</h3>
+                            <p>Rockaway Beach, Fort Tulden, Brighton Beach</p>
+                            <p>22 Nov - 25 Nov (3D 4N)</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="holiday_booked()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'holiday_booked' | translate}}<span class="end">$250.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_holiday.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>Manhattan Beaches</h3>
+                            <p>Rockaway Beach, Fort Tulden, Brighton Beach</p>
+                            <p>22 Nov - 25 Nov (3D 4N)</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="holiday_booked()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'holiday_booked' | translate}}<span class="end">$250.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_holiday.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>Manhattan Beaches</h3>
+                            <p>Rockaway Beach, Fort Tulden, Brighton Beach</p>
+                            <p>22 Nov - 25 Nov (3D 4N)</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="holiday_booked()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'holiday_booked' | translate}}<span class="end">$250.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_holiday.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>Manhattan Beaches</h3>
+                            <p>Rockaway Beach, Fort Tulden, Brighton Beach</p>
+                            <p>22 Nov - 25 Nov (3D 4N)</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="holiday_booked()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'holiday_booked' | translate}}<span class="end">$250.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_holiday.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>Manhattan Beaches</h3>
+                            <p>Rockaway Beach, Fort Tulden, Brighton Beach</p>
+                            <p>22 Nov - 25 Nov (3D 4N)</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="holiday_booked()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'holiday_booked' | translate}}<span class="end">$250.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_holiday.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>Manhattan Beaches</h3>
+                            <p>Rockaway Beach, Fort Tulden, Brighton Beach</p>
+                            <p>22 Nov - 25 Nov (3D 4N)</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="holiday_booked()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'holiday_booked' | translate}}<span class="end">$250.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_holiday.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>Manhattan Beaches</h3>
+                            <p>Rockaway Beach, Fort Tulden, Brighton Beach</p>
+                            <p>22 Nov - 25 Nov (3D 4N)</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+        </ion-list>
+
+        <ion-list lines="none" *ngSwitchCase="'homestays'">
+            <ion-item (click)="homestay_booked()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'homestays_booked' | translate}}<span class="end">$135.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_homestay.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>White Heaven Villa</h3>
+                            <p>City Cricle, Manhattan</p>
+                            <p>23 Jun, 11:00 am - 24 Jun, 10:00 am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="homestay_booked()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'homestays_booked' | translate}}<span class="end">$135.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_homestay.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>White Heaven Villa</h3>
+                            <p>City Cricle, Manhattan</p>
+                            <p>23 Jun, 11:00 am - 24 Jun, 10:00 am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="homestay_booked()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'homestays_booked' | translate}}<span class="end">$135.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_homestay.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>White Heaven Villa</h3>
+                            <p>City Cricle, Manhattan</p>
+                            <p>23 Jun, 11:00 am - 24 Jun, 10:00 am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="homestay_booked()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'homestays_booked' | translate}}<span class="end">$135.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_homestay.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>White Heaven Villa</h3>
+                            <p>City Cricle, Manhattan</p>
+                            <p>23 Jun, 11:00 am - 24 Jun, 10:00 am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item (click)="homestay_booked()">
+                <div class="item_inner">
+                    <div class="item_header">
+                        <h2 class="d-flex">{{'homestays_booked' | translate}}<span class="end">$135.00</span></h2>
+                    </div>
+                    <div class="item_details d-flex">
+                        <div class="img_box">
+                            <img src="assets/imgs/ic_homestay.png">
+                        </div>
+                        <div class="text_box">
+                            <h3>White Heaven Villa</h3>
+                            <p>City Cricle, Manhattan</p>
+                            <p>23 Jun, 11:00 am - 24 Jun, 10:00 am</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+        </ion-list>
+    </div>
+</ion-content>

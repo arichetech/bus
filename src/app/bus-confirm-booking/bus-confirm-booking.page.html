@@ -1,0 +1,82 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button text="" icon="arrow-back-outline"></ion-back-button>
+        </ion-buttons>
+        <ion-title>{{'confirm_booking' | translate}}</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+    <div class="banner">
+        <div class="flight_details d-flex">
+            <div class="flight_img center_img">
+                <img src="assets/imgs/bus_1.png" class="crop_img">
+            </div>
+            <div class="text">
+                <h2>Polo Travels</h2>
+                <h3>2X1(36)AC -Sleeper TATA</h3>
+            </div>
+        </div>
+        <div class="form">
+            <ion-list lines="none">
+                <ion-item>
+                    <div class="item_inner d-flex">
+                        <ion-icon class="zmdi  zmdi-long-arrow-up"></ion-icon>
+                        <div class="text_box">
+                            <h4>{{'pick_up_location' | translate}}</h4>
+                            <h2>Old City Market, Houstone, USA</h2>
+                        </div>
+                    </div>
+                </ion-item>
+                <ion-item>
+                    <div class="item_inner d-flex">
+                        <ion-icon class="zmdi  zmdi-long-arrow-down"></ion-icon>
+                        <div class="text_box">
+                            <h4>{{'drop_location' | translate}}</h4>
+                            <h2>White Church, Manhattan, USA</h2>
+                        </div>
+                    </div>
+                </ion-item>
+            </ion-list>
+        </div>
+        <div class="containt">
+            <ion-row>
+                <ion-col size="6">
+                    <h3>{{'depature' | translate}}</h3>
+                    <h2>23 Jun, 12:35 am</h2>
+                </ion-col>
+                <ion-col size="6" class="ion-text-end">
+                    <h3>{{'arrival' | translate}}</h3>
+                    <h2>24 Jun, 10:00 am</h2>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col size="4">
+                    <h3>{{'class' | translate}}</h3>
+                    <h2>First Class</h2>
+                </ion-col>
+                <ion-col size="4" class="ion-text-center">
+                    <h3>{{'total_seats' | translate}}</h3>
+                    <h2>01</h2>
+                </ion-col>
+                <ion-col size="4" class="ion-text-end">
+                    <h3>{{'seat_alloted' | translate}}</h3>
+                    <h2>B3</h2>
+                </ion-col>
+            </ion-row>
+        </div>
+    </div>
+</ion-content>
+
+
+
+<ion-footer class="ion-no-border">
+    <div class="payment_info">
+        <h1>{{'payment_info' | translate}}</h1>
+        <h2 class="d-flex">{{'fare_charges' | translate}}<span class="end">$ 90.00</span></h2>
+        <h2 class="d-flex">{{'convenince_charges' | translate}}<span class="end">$ 10.00</span></h2>
+        <h2 class="d-flex">{{'cancellation_charges' | translate}}<span class="end">$ 5.00</span></h2>
+    </div>
+    <ion-button mode="md" size="large" shape="full" class="btn" (click)="bus_payment()">{{'continue_to_pay' | translate}} $105.00</ion-button>
+</ion-footer>

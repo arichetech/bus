@@ -1,0 +1,114 @@
+<ion-header class="bg_transparent">
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button text="" icon="arrow-back-outline"></ion-back-button>
+        </ion-buttons>
+        <ion-title></ion-title>
+    </ion-toolbar>
+    <div class="banner">
+        <div class="header_text">
+            <h2> <span>23 Jul 2019</span>
+                <ion-icon></ion-icon>
+                <span>1 {{'traveller' | translate}}</span>
+            </h2>
+        </div>
+        <div class="banner_bg center_img">
+            <img src="assets/imgs/flight.png" class="crop_img">
+        </div>
+        <div class="form">
+            <ion-list lines="none">
+                <ion-item>
+                    <div class="item_inner d-flex">
+                        <ion-icon class="zmdi zmdi-flight-takeoff"></ion-icon>
+                        <div class="text_box">
+                            <h4>23 Jul, 12:35 am</h4>
+                            <h2>Hou - Houstone, USA</h2>
+                        </div>
+                    </div>
+                </ion-item>
+                <div class="traveling_time d-flex">
+                    <div class="underline end"></div>
+                    <h3 class="end ion-text-end">&nbsp; &nbsp; 12 hr 32 mins | 01 Stop</h3>
+                </div>
+                <ion-item>
+                    <div class="item_inner d-flex">
+                        <ion-icon class="zmdi zmdi-flight-land"></ion-icon>
+                        <div class="text_box">
+                            <h4>24 Jul, 12:45 pm</h4>
+                            <h2>MHK - Manhattan, USA</h2>
+                        </div>
+                    </div>
+                </ion-item>
+            </ion-list>
+        </div>
+
+        <div class="facilities d-flex">
+            <h2 class="d-flex">
+                <ion-icon class="zmdi zmdi-case"></ion-icon>
+                6 Kg Hand baggage
+            </h2>
+            <h2 class="d-flex">
+                <ion-icon class="zmdi zmdi-case"></ion-icon>
+                20 Kg Check-in baggage
+            </h2>
+            <h2 class="d-flex">
+                <ion-icon class="zmdi zmdi-case"></ion-icon>
+                20 Kg Check-in baggage
+            </h2>
+        </div>
+    </div>
+</ion-header>
+
+<ion-content>
+    <div class="container">
+        <div class="flight_details d-flex">
+            <div class="flight_img center_img">
+                <img src="assets/imgs/flight_1.png" class="crop_img">
+            </div>
+            <div class="text">
+                <h2>American Airlines</h2>
+                <h3>AA-1264</h3>
+            </div>
+        </div>
+
+        <ion-list lines="none">
+            <ion-radio-group>
+                <ion-item>
+                    <ion-label class="d-flex">
+                        <div class="class_info">
+                            <h2>Economy</h2>
+                            <h3>50 Seats left</h3>
+                        </div>
+                        <h5 class="end">$158.50</h5>
+                    </ion-label>
+                    <ion-radio checked="true" value="Economy"></ion-radio>
+                </ion-item>
+
+                <ion-item>
+                    <ion-label class="d-flex">
+                        <div class="class_info">
+                            <h2>Premium Economy</h2>
+                            <h3>78 Seats left</h3>
+                        </div>
+                        <h5 class="end">$210.00</h5>
+                    </ion-label>
+                    <ion-radio value="Premium"></ion-radio>
+                </ion-item>
+
+                <ion-item>
+                    <ion-label class="d-flex">
+                        <div class="class_info">
+                            <h2>Business</h2>
+                            <h3>25 Seats left</h3>
+                        </div>
+                        <h5 class="end">$300.00</h5>
+                    </ion-label>
+                    <ion-radio value="Business"></ion-radio>
+                </ion-item>
+            </ion-radio-group>
+        </ion-list>
+    </div>
+</ion-content>
+<ion-footer class="ion-no-border" (click)="confirm_booking()">
+    <h2 class="d-flex">$158.00 <small>&nbsp;&nbsp;&nbsp; For 1 Traveller</small><span class="end ion-text-uppercase">{{'book_now' | translate}}</span></h2>
+</ion-footer>

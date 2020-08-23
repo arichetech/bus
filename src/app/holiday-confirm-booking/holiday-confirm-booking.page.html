@@ -1,0 +1,63 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button text="" icon="arrow-back-outline"></ion-back-button>
+        </ion-buttons>
+        <ion-title>{{'confirm_booking' | translate}}</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+    <div class="banner">
+        <div class="flight_details d-flex">
+            <div class="text">
+                <h2>Manhattan Beaches</h2>
+                <h3>Hotel Sky Garden</h3>
+            </div>
+        </div>
+        <div class="containt">
+            <ion-row >
+                <ion-col size="12">
+                    <h3>{{'holiday_location' | translate}}</h3>
+                    <h2>Rockaway Beach, Fort Tulden, Brighton Beach</h2>
+                </ion-col>
+            </ion-row>
+
+
+            <ion-row>
+                <ion-col size="6">
+                    <h3>{{'holiday_starts' | translate}}</h3>
+                    <h2>23 Jun, 2019</h2>
+                </ion-col>
+                <ion-col size="6" class="ion-text-end">
+                    <h3>{{'holiday_ends' | translate}}</h3>
+                    <h2>24 Jun, 2019</h2>
+                </ion-col>
+            </ion-row>
+            
+            
+            <ion-row>
+                <ion-col size="8">
+                    <h3>{{'fare_includes' | translate}}</h3>
+                    <h2>Air Fare & Hotel Booking</h2>
+                </ion-col>
+                <ion-col size="4" class="ion-text-end">
+                    <h3>{{'total_travellers' | translate}}</h3>
+                    <h2>02</h2>
+                </ion-col>
+            </ion-row>
+        </div>
+    </div>
+</ion-content>
+
+
+
+<ion-footer class="ion-no-border">
+    <div class="payment_info">
+        <h1>{{'payment_info' | translate}}</h1>
+        <h2 class="d-flex">{{'fare_charges' | translate}}<span class="end">$ 250.00</span></h2>
+        <h2 class="d-flex">{{'convenince_charges' | translate}}<span class="end">$ 10.00</span></h2>
+        <h2 class="d-flex">{{'cancellation_charges' | translate}}<span class="end">$ 5.00</span></h2>
+    </div>
+    <ion-button mode="md" size="large" shape="full" class="btn" (click)="payment()">{{'continue_to_pay' | translate}} $ 265.00</ion-button>
+</ion-footer>

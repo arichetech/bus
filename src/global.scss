@@ -1,0 +1,985 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+:root {
+    --primary: #32abff;
+    --primary-dark: #0090f4;
+    --secondary: #00e6ff;
+    --bg-color: #f1f6f7;
+    --text-light: #a3a3a3;
+    --white: #fff;
+    --transparent: rgba(0, 0, 0, 0);
+    --text-dark: #242424;
+    --text-black: #000;
+    --yelow-color: #f6b425;
+    --green-color: #5abd1e;
+    --red-color: #FF4141;
+    --theme-gradient: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(50, 171, 255, 0.99) 70%, rgba(50, 171, 255, 1) 71%);
+}
+
+.bg_color {
+    --background: var(--bg-color);
+}
+
+
+.d-flex {
+    display: flex !important;
+    align-items: center;
+    width: 100%;
+
+    .end {
+        margin-left: auto !important;
+        margin-right: 0 !important;
+        display: block;
+    }
+}
+
+.center_img {
+    position: relative;
+    overflow: hidden;
+
+    img {
+        &.crop_img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            bottom: 0;
+            left: -50% !important;
+            right: -50% !important;
+            margin: auto;
+        }
+
+    }
+}
+
+.button {
+    &.btn {
+        width: 100%;
+        font-size: .95rem;
+        font-weight: 500;
+        letter-spacing: 1.5px !important;
+        height: 52px;
+        --background: var(--primary);
+        color: var(--white);
+        margin: 0;
+        --box-shadow: none;
+        text-transform: uppercase;
+
+        ion-icon {
+            font-size: 1.4rem;
+        }
+
+        &:hover:not(.disable-hover) {
+            --background: var(--primary);
+        }
+
+        &.button-outline {
+            --background: var(--transparent);
+            color: var(--primary);
+            --border-color: var(--primary);
+            --border-width: 1px;
+
+            &:hover:not(.disable-hover) {
+                --background: var(--transparent);
+            }
+        }
+
+        &.button-clear {
+            --background: var(--transparent);
+            color: var(--primary);
+            font-weight: 600;
+
+            &:hover:not(.disable-hover) {
+                --background: var(--transparent);
+            }
+        }
+
+        &.button-round {
+            --border-radius: 50px !important;
+        }
+
+        &.button-block {
+            --border-radius: 6px !important;
+        }
+
+    }
+}
+
+ion-header {
+    z-index: 999;
+
+    &::after {
+        display: none !important;
+    }
+
+    ion-toolbar {
+        --background: var(--white);
+        display: flex;
+        align-items: center;
+        min-height: 60px !important;
+        height: auto;
+        overflow: visible !important;
+        --border-width: 0 !important;
+
+        ion-buttons {
+            position: relative !important;
+            margin: 0;
+            --padding-end: 0 !important;
+            --padding-start: 0 !important;
+
+            ion-back-button {
+                --color: var(--text-dark);
+                --icon-font-size: 1.4rem !important;
+            }
+
+            ion-menu-button {
+                --color: var(--text-black) !important;
+                --padding-end: 0 !important;
+                font-size: 1.5rem !important;
+                margin-right: 8px;
+
+                &.ios {
+                    font-size: 2rem !important;
+                }
+
+            }
+
+            ion-back-button {
+                .button-native {
+                    padding: 0 !important;
+                }
+            }
+
+            &.ios {
+                padding: 0 10px !important;
+            }
+
+        }
+
+        ion-title {
+            color: var(--text-black);
+            padding: 0 15px !important;
+            padding-left: 0 !important;
+            text-align: justify !important;
+            font-size: 1.4rem;
+            font-weight: 500;
+            text-transform: unset;
+            display: block;
+            position: relative !important;
+            line-height: 60px;
+        }
+
+    }
+
+    &.bg_transparent {
+        ion-toolbar {
+            --background: transparent;
+            --ion-color-base: transparent !important;
+        }
+    }
+
+    .header_text {
+        position: relative;
+        top: -9px;
+        padding: 0 17px;
+        background: var(--white);
+        z-index: 999;
+
+        h2 {
+            margin: 0;
+            color: var(--text-dark);
+            font-size: 1.75rem;
+            font-weight: 500;
+            padding-bottom: 6px;
+        }
+
+        h3 {
+            margin: 0;
+            color: var(--text-light);
+            font-weight: 400;
+            font-size: 01rem;
+            line-height: 22px;
+            letter-spacing: .3px;
+            padding-top: 3px;
+            max-width: calc(100% - 12px);
+        }
+    }
+}
+
+
+.form {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    width: calc(100% - 0px);
+    padding: 0 20px;
+    z-index: 99;
+
+    ion-list {
+        background: var(--transparent) !important;
+        margin: 0;
+        padding: 0;
+    }
+
+    ion-item {
+        padding: 0;
+        --background: var(--transparent);
+        --inner-padding-end: 0px;
+        --inner-min-height: unset !important;
+        --min-height: unset !important;
+        --padding-start: 0;
+        box-shadow: none !important;
+        --ripple-color: var(--transparent) !important;
+        --background-focused: var(--transparent) !important;
+        --highligh-color-focused: var(--transparent) !important;
+        margin-bottom: 24px;
+
+        .item_inner {
+            width: 100%;
+            align-items: flex-end !important;
+
+            ion-icon {
+                color: var(--primary);
+                margin: 0;
+                font-size: 1.25rem;
+                min-width: 27px;
+                position: relative;
+                top: -3px;
+            }
+
+            .input_field {
+                width: 100%;
+            }
+        }
+
+        ion-label {
+            color: #828282 !important;
+            margin: 0;
+            font-size: 0.8rem !important;
+            letter-spacing: 0;
+            font-weight: 500;
+            max-width: 100% !important;
+            width: 100% !important;
+            margin-bottom: 9px;
+
+            span {
+                color: var(--primary);
+            }
+        }
+
+        ion-textarea,
+        ion-input {
+            --padding: 0 !important;
+            font-size: .95rem !important;
+            font-weight: 600 !important;
+            letter-spacing: 0px;
+            --padding-start: 0 !important;
+            --padding-end: 0 !important;
+            --padding-top: 0 !important;
+            --padding-bottom: 0px !important;
+            color: var(--text-black);
+            --placeholder-color: var(--text-light) !important;
+            --placeholder-opacity: 1;
+            --placeholder-font-weight: 400 !important;
+            position: relative;
+            background: var(--bg-color);
+            padding: 13px 15px 13px 15px !important;
+            border-radius: 3px;
+
+            input {
+                --padding: var(--no-padding);
+
+                &.native-input {
+                    --padding: var(--no-padding);
+                }
+            }
+
+            &.password {
+                letter-spacing: 2px;
+            }
+        }
+
+        &.item-select {
+            ion-select {
+                --padding: 0 !important;
+                font-size: .95rem !important;
+                font-weight: 600 !important;
+                color: var(--text-black);
+                background: var(--bg-color);
+                padding: 13px 15px 13px 15px !important;
+                border-radius: 3px;
+                max-width: 100%;
+                width: 100%;
+            }
+        }
+    }
+
+    ion-row {
+        margin: 0 -5px;
+    }
+}
+
+.animate__animated.animate__zoomIn {
+    --animate-duration: .2s;
+}
+
+
+.alert-wrapper {
+    border-radius: 13px !important;
+    min-width: calc(100% - 58px) !important;
+    max-height: 484px !important;
+    height: auto;
+
+    .alert-head {
+        background: var(--bg-color);
+        padding: 20px 27px 16px 27px;
+
+        h2 {
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 1.2rem;
+        }
+    }
+
+    .alert-radio-group {
+        max-height: 291px !important;
+
+        .alert-radio-button {
+            .alert-button-inner {
+                .alert-radio-label {
+                    font-size: 1.2rem;
+                    color: var(--text-black);
+                }
+            }
+        }
+    }
+
+    .alert-button-group {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 1.5px;
+            height: 100%;
+            background-color: var(--white);
+            z-index: 9999;
+            margin: 0 auto;
+        }
+
+        .alert-button {
+            color: var(--white);
+            background: var(--primary);
+            height: 50px;
+            text-align: center;
+            margin: 0;
+            width: 50%;
+
+            .alert-button-inner {
+                width: 100%;
+                display: block;
+                height: fit-content;
+                font-size: 1rem;
+                text-transform: uppercase;
+                letter-spacing: 0.7px;
+            }
+        }
+    }
+}
+
+
+
+
+app-calendar {
+    ion-calendar {
+        padding: 10px 0px !important;
+
+        .title {
+            width: calc(100% - 20px);
+            margin: 0 auto;
+            margin-bottom: 10px;
+            padding: 0 34px 0 43px !important;
+
+            ion-button {
+
+                &.forward,
+                &.back {
+                    background-color: var(--white);
+                    border-radius: 50%;
+                    min-width: 33px;
+                    max-width: 33px;
+                    height: 33px;
+                    opacity: 1;
+                    background: url(assets/imgs/ic_nev_prev.png);
+                    background-position: center;
+                    background-size: cover;
+                }
+
+                &.forward {
+                    background: url(assets/imgs/ic_nev_next.png);
+                    background-position: center;
+                    background-size: cover;
+                }
+
+                &.switch-btn {
+                    opacity: 1;
+                    color: var(--text-black) !important;
+                    text-transform: unset;
+                    font-size: 1.2rem !important;
+
+                    ion-icon {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        ion-calendar-week {
+            ion-toolbar {
+                .week-title {
+                    li {
+                        color: var(--text-black);
+                        font-size: 1rem;
+                        font-weight: 500;
+                        height: 40px;
+                    }
+                }
+            }
+        }
+
+        ion-calendar-month {
+            .month-picker {
+                .month-packer-item {
+                    button {
+                        color: var(--white) !important;
+                        font-size: 0.85rem !important;
+                        font-weight: 500 !important;
+                    }
+
+                    &.this-month {
+                        button {
+                            border-color: var(--primary) !important;
+                        }
+                    }
+                }
+            }
+
+            .days-box {
+                padding: 0.5rem 0 !important;
+
+                .days {
+                    height: 40px;
+
+                    .days-btn {
+                        p {
+                            color: var(--text-black);
+                            font-size: 0.85rem;
+                            font-weight: 500;
+
+                        }
+
+                        &[disabled] {
+                            p {
+                                color: var(--text-light) !important;
+                                font-size: 0.85rem;
+                                font-weight: 500;
+                                opacity: .6;
+                            }
+                        }
+
+                        &.next-month-day,
+                        &.last-month-day {
+                            p {
+                                color: var(--text-black) !important;
+                                font-size: 0.85rem;
+                                font-weight: 500;
+                                opacity: .5;
+                            }
+                        }
+
+                        &.today {
+                            background: var(--item_bg) !important;
+
+                            p {
+                                color: var(--primary) !important;
+                                font-size: 1rem;
+                                font-weight: 500;
+                            }
+                        }
+
+                        &.on-selected {
+                            background: var(--primary) !important;
+
+                            p {
+                                color: var(--white) !important;
+                                font-size: 1rem;
+                                font-weight: 500;
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+ion-modal {
+    --background: rgba(0, 0, 0, 0) !important;
+}
+
+app-homestay-photos,
+app-homestay-info,
+app-holiday-info,
+app-hotel-photos,
+app-hotel-info {
+    .swiper-pagination {
+        .swiper-pagination-bullet {
+            opacity: .9;
+            font-size: 3px;
+            width: 5px;
+            height: 5px;
+            margin: 0 3px !important;
+
+            &.swiper-pagination-bullet-active {
+                opacity: 1 !important;
+            }
+        }
+    }
+}
+
+ion-app[dir="rtl"] {
+
+    .d-flex .end {
+        margin-left: 0 !important;
+        margin-right: auto !important;
+    }
+
+    ion-header ion-toolbar {
+        ion-buttons {
+            ion-back-button {
+                transform: rotate(180deg) !important;
+            }
+
+            ion-menu-button {
+                margin-right: 0px !important;
+                margin-left: 8px !important;
+            }
+        }
+
+        ion-title {
+            padding-left: 15px !important;
+            padding-right: 0 !important;
+        }
+    }
+
+    app-sign-in {
+        .socila_section .button.btn img {
+            left: unset !important;
+            right: -12px !important;
+        }
+    }
+
+    app-account {
+        ion-header .profile_box .img_box {
+            margin-right: 0px !important;
+            margin-left: 16px !important;
+        }
+    }
+
+    app-my-profile {
+        .form .profile_img ion-icon {
+            right: unset !important;
+            left: 0 !important;
+        }
+    }
+
+    app-homestay-review,
+    app-hotel-review,
+    app-my-reviews {
+        ion-list ion-item .item_inner .reviews_details .img_box {
+            margin-right: 0 !important;
+            margin-left: 13px !important;
+        }
+    }
+
+    app-support {
+        .banner .button.btn ion-icon {
+            left: unset !important;
+            right: -15px !important;
+        }
+    }
+
+    app-home {
+        .scroll_box .scroll_container .items_scroll {
+            &:first-child {
+                margin-left: 4px !important;
+                margin-right: 18px !important;
+            }
+
+            &:last-child {
+                margin-right: 4px !important;
+                margin-left: 18px !important;
+            }
+        }
+    }
+
+    app-search-bus,
+    app-search-train,
+    app-search-flights {
+        .tab_container .tab_contant ion-list ion-card ion-row ion-item.item-select ion-select {
+            margin-right: 0px !important;
+            margin-left: 10px !important;
+        }
+    }
+
+    app-bus-list,
+    app-train-result,
+    app-flight-result {
+        ion-header .tab_btn_box ion-segment ion-segment-button {
+            &:first-child {
+                margin-left: 7px !important;
+                margin-right: 16px !important;
+            }
+
+            &:last-child {
+                margin-right: 7px !important;
+                margin-left: 16px !important;
+            }
+        }
+
+        ion-list ion-item .item_inner {
+            .item_header::before {
+                transform: rotate(180deg);
+                right: unset !important;
+                left: 0 !important;
+            }
+
+            .item_containt .img_box {
+                margin-right: 0 !important;
+                margin-left: 14px !important;
+            }
+
+            .item_containt .text_box ion-row ion-col .icon_box ion-icon {
+                &:first-child {
+                    margin-left: 0 !important;
+                    margin-right: 0 !important;
+                }
+
+                &:last-child {
+                    margin-right: 0 !important;
+                    margin-left: 0 !important;
+                }
+            }
+        }
+    }
+
+    app-filter {
+        ion-list ion-radio-group ion-item {
+            &:first-child {
+                margin-left: 3px !important;
+                margin-right: 20px !important;
+            }
+
+            &:last-child {
+                margin-right: 3px !important;
+                margin-left: 20px !important;
+            }
+        }
+    }
+
+    app-bus-info,
+    app-train-info,
+    app-flight-info {
+        .banner {
+            .form .traveling_time {
+                padding-left: 0 !important;
+                padding-right: 34px !important;
+            }
+
+            .facilities h2 {
+                &:first-child {
+                    margin-left: 7px !important;
+                    margin-right: 13px !important;
+                }
+
+                &:last-child {
+                    margin-right: 7px !important;
+                    margin-left: 13px !important;
+                }
+            }
+        }
+
+        .container .flight_details .flight_img {
+            margin-right: 0px !important;
+            margin-left: 10px !important;
+        }
+    }
+
+    app-cab-confirm-booking,
+    app-train-confirm-booking,
+    app-confirm-booking {
+        .banner .flight_details .flight_img {
+            margin-right: 0 !important;
+            margin-left: 13px !important;
+        }
+    }
+
+    app-bus-payment,
+    app-homestay-payment,
+    app-holiday-payment,
+    app-cab-payment,
+    app-hotel-payment,
+    app-train-payment,
+    app-payment {
+        .payment_options ion-list ion-item {
+            &:first-child {
+                margin-left: 4px !important;
+                margin-right: 16px !important;
+            }
+
+            &:last-child {
+                margin-left: 16px !important;
+                margin-right: 4px !important;
+            }
+        }
+    }
+
+    app-bus-ticket,
+    app-cab-ticket,
+    app-tain-ticket,
+    app-flight-ticket {
+        .booking_receipt .container.receipt_header .img_box {
+            margin-right: 0 !important;
+            margin-left: 16px !important;
+        }
+
+        .booking_receipt .container.receipt_containt.banner ion-row ion-col ion-icon {
+            transform: rotate(-90deg) !important;
+        }
+    }
+
+    app-bus-ticket,
+    app-cab-ticket,
+    app-tain-ticket {
+        .booking_receipt .container.receipt_containt.banner ion-row ion-col ion-icon {
+            transform: rotate(-180deg) !important;
+        }
+
+    }
+
+    app-train-result {
+        ion-list ion-item .item_inner .item_footer .scroll-x .item_scroll {
+            &:first-child {
+                margin-left: 4px !important;
+                margin-right: 23px !important;
+            }
+
+            &:last-child {
+                margin-right: 4px !important;
+                margin-left: 23px !important;
+            }
+        }
+    }
+
+    app-list-of-homestay,
+    app-holiday-list,
+    app-hotels-list {
+        ion-list ion-item .item_inner {
+            ion-badge {
+                left: unset !important;
+                right: 15px !important;
+            }
+
+            .item_details {
+                &::before {
+                    right: unset !important;
+                    left: 0 !important;
+                    transform: rotate(-180deg);
+                }
+            }
+
+            .scroll_container .img_box {
+                &:first-of-type {
+                    margin-left: 2px !important;
+                    margin-right: 4px !important;
+                }
+
+                &:last-of-type {
+                    margin-right: 2px !important;
+                    margin-left: 4px !important;
+                }
+            }
+        }
+    }
+
+    app-homestay-map,
+    app-hotel-map {
+        ion-footer {
+            ion-item .item_inner {
+                ion-badge {
+                    left: unset !important;
+                    right: 15px !important;
+                }
+
+                .item_details {
+                    &::before {
+                        right: unset !important;
+                        left: 0 !important;
+                        transform: rotate(-180deg);
+                    }
+                }
+
+                .scroll_container .img_box {
+                    &:first-of-type {
+                        margin-left: 2px !important;
+                        margin-right: 4px !important;
+                    }
+
+                    &:last-of-type {
+                        margin-right: 2px !important;
+                        margin-left: 4px !important;
+                    }
+                }
+            }
+        }
+    }
+
+    app-homestay-info,
+    app-holiday-info,
+    app-hotel-info {
+        ion-list ion-item.amenities .item_inner .scroll-x .scroll_box {
+            &:first-of-type {
+                margin-left: 3px !important;
+                margin-right: 18px !important;
+            }
+
+            &:last-of-type {
+                margin-right: 3px !important;
+                margin-left: 18px !important;
+            }
+        }
+    }
+
+    app-homestay-booked,
+    app-holiday-booked,
+    app-hotel-booked {
+        .banner .scroll-x .item_scroll {
+            &:first-of-type {
+                margin-left: 1px !important;
+                margin-right: 22px !important;
+            }
+
+            &:last-of-type {
+                margin-right: 1px !important;
+                margin-left: 22px !important;
+            }
+        }
+    }
+
+
+    app-cab-list {
+        ion-list ion-item .item_inner {
+            .item_containt {
+                &::before {
+                    transform: rotate(-180deg);
+                    left: 0;
+                    right: unset !important;
+                }
+
+                .img_box {
+                    margin-right: 0 !important;
+                    margin-left: 14px !important;
+                }
+            }
+        }
+    }
+
+    app-cab-info {
+        ion-list ion-item.cab_company .item_inner .details .img_box {
+            margin-right: 0 !important;
+            margin-left: 16px !important;
+        }
+    }
+
+    app-bus-info {
+        .container .flight_details .text.end h2 ion-icon {
+            margin-right: 0px !important;
+            margin-left: 7px !important;
+        }
+
+        .container ion-list ion-item .item_inner .bus_seats {
+            margin-left: 0 !important;
+            margin-right: auto !important;
+        }
+    }
+
+    app-my-bookings {
+        ion-header ion-segment ion-segment-button {
+            &:first-child {
+                margin-left: 11px !important;
+                margin-right: 15px !important;
+            }
+
+            &:last-child {
+                margin-right: 11px !important;
+                margin-left: 15px !important;
+            }
+        }
+
+        ion-list ion-item .item_inner .item_details .img_box {
+            margin-right: 0 !important;
+            margin-left: 25px !important;
+        }
+    }
+
+    app-account {
+        .buy_this_app {
+            right: unset !important;
+            left: 11px !important;
+        }
+
+        ion-footer .developed_by {
+            padding: 14px 20px 10px 13px !important;
+        }
+    }
+
+    app-home {
+        .banner .buy_this_app {
+            right: unset !important;
+            left: 20px !important;
+        }
+    }
+}

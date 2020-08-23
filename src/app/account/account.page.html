@@ -1,0 +1,90 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>
+            <div class="d-flex title_inner">
+                {{'account' | translate}}
+            </div>
+        </ion-title>
+    </ion-toolbar>
+    <div class="profile_box d-flex" (click)="my_profile()">
+        <div class="img_box center_img">
+            <img src="assets/imgs/g8.png" class="crop_img">
+        </div>
+        <div class="profile_details">
+            <h2>Sam Smith</h2>
+            <p>{{'view_profile' | translate}}</p>
+        </div>
+    </div>
+</ion-header>
+
+<ion-content>
+
+    <div class="buy_this_app end" *ngIf="config.showBuyPromt" (click)="buyAppAction()">
+        <h2>
+            <!--                        <ion-icon class="zmdi zmdi-shopping-cart"></ion-icon>-->
+            {{"buy_this_app" | translate}}
+        </h2>
+    </div>
+
+    <ion-list lines="none">
+        <ion-item (click)="support()">
+            <div class="item_inner d-flex">
+                <ion-icon class="zmdi zmdi-email"></ion-icon>
+                <h2>{{'support' | translate}}</h2>
+            </div>
+        </ion-item>
+        <ion-item (click)="about_us()">
+            <div class="item_inner d-flex">
+                <ion-icon class="zmdi zmdi-assignment-account"></ion-icon>
+                <h2 class="d-flex">{{'about_us' | translate}}</h2>
+            </div>
+        </ion-item>
+        <ion-item (click)="condition()">
+            <div class="item_inner d-flex">
+                <ion-icon class="zmdi zmdi-assignment"></ion-icon>
+                <h2>{{'terms_conditions' | translate}} </h2>
+            </div>
+        </ion-item>
+        <ion-item (click)="my_reviews()">
+            <div class="item_inner d-flex">
+                <ion-icon class="zmdi zmdi-star"></ion-icon>
+                <h2 class="d-flex">{{'my_reviews' | translate}} </h2>
+            </div>
+        </ion-item>
+
+        <ion-item (click)="select_language()">
+            <div class="item_inner d-flex">
+                <ion-icon class="zmdi zmdi-globe"></ion-icon>
+                <h2 class="d-flex">{{'change_language' | translate}} </h2>
+            </div>
+        </ion-item>
+
+        <ion-item>
+            <div class="item_inner d-flex">
+                <ion-icon class="zmdi zmdi-share"></ion-icon>
+                <h2 class="d-flex">{{'share_app' | translate}} </h2>
+            </div>
+        </ion-item>
+        <ion-item>
+            <div class="item_inner d-flex">
+                <ion-icon class="zmdi zmdi-thumb-up"></ion-icon>
+                <h2>{{'rate_app' | translate}} </h2>
+            </div>
+        </ion-item>
+        <ion-item (click)="signin()">
+            <div class="item_inner d-flex">
+                <ion-icon class="zmdi zmdi-power-off"></ion-icon>
+                <h2>{{'logout' | translate}} </h2>
+            </div>
+        </ion-item>
+    </ion-list>
+</ion-content>
+
+<ion-footer class="ion-no-border"  *ngIf="config.showBuyPromt">
+    <div class="developed_by d-flex"  (click)="developed_by()">
+        <h2>{{"developed_by" | translate}}</h2>
+        <div class="img_box">
+            <img src="assets/imgs/opus.png">
+        </div>
+    </div>
+</ion-footer>

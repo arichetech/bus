@@ -1,0 +1,31 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button text="" icon="arrow-back-outline"></ion-back-button>
+        </ion-buttons>
+        <ion-title> </ion-title>
+    </ion-toolbar>
+    <div class="header_text">
+        <h2>{{'verification_code' | translate}}</h2>
+        <h3>{{'verification_code_massage' | translate}}</h3>
+    </div>
+</ion-header>
+
+<ion-content fullscreen>
+    <div class="form">
+        <ion-list lines="none">
+            <ion-item lines="none">
+                <div class="item_inner">
+                    <ion-label mode="md">{{'enter_verification_code' | translate}}</ion-label>
+                    <ion-input mode="md" class="password" type="number" value="5887"></ion-input>
+                </div>
+            </ion-item>
+        </ion-list>
+    </div>
+</ion-content>
+
+<ion-footer class="ion-no-border">
+    <ion-button mode="md" size="large" shape="full" class="btn" (click)="tabs()">
+        {{'verify_now' | translate}}
+    </ion-button>
+</ion-footer>

@@ -1,0 +1,404 @@
+<ion-header class="bg_transparent">
+    <!--
+  <ion-toolbar>
+    <ion-title></ion-title>
+  </ion-toolbar>
+-->
+
+    <div class="banner">
+        <div class="buy_this_app end" *ngIf="config.showBuyPromt" (click)="buyAppAction()">
+            <h2>
+                <!--                        <ion-icon class="zmdi zmdi-shopping-cart"></ion-icon>-->
+                {{"buy_this_app" | translate}}
+            </h2>
+        </div>
+        <div class="header_text d-flex">
+            <h2>
+                {{'hey' | translate}} Sam,<br> {{'where_you_wanna_go' | translate}}
+            </h2>
+        </div>
+        <div class="your_location d-flex">
+            <ion-icon class="zmdi zmdi-pin ion-text-start"></ion-icon>
+            <h3>Manhattan, New York</h3>
+        </div>
+
+        <div class="menu">
+            <ion-row>
+                <ion-col size="3">
+                    <div class="menu_items" (click)="search_flights()">
+                        <img src="assets/imgs/ic_flight.png">
+                        <p>{{'flight' | translate}}</p>
+                    </div>
+                </ion-col>
+                <ion-col size="3">
+                    <div class="menu_items" (click)="search_hotel()">
+                        <img src="assets/imgs/ic_hotels.png">
+                        <p>{{'hotels' | translate}}</p>
+                    </div>
+                </ion-col>
+                <ion-col size="3">
+                    <div class="menu_items" (click)="search_train()">
+                        <img src="assets/imgs/ic_train.png">
+                        <p>{{'trains' | translate}}</p>
+                    </div>
+                </ion-col>
+                <ion-col size="3">
+                    <div class="menu_items" (click)="search_holiday()">
+                        <img src="assets/imgs/ic_holiday.png">
+                        <p>{{'holidays' | translate}}</p>
+                    </div>
+                </ion-col>
+                <ion-col size="3">
+                    <div class="menu_items" (click)="search_bus()">
+                        <img src="assets/imgs/ic_bus.png">
+                        <p>{{'bus' | translate}}</p>
+                    </div>
+                </ion-col>
+                <ion-col size="3">
+                    <div class="menu_items" (click)="search_cab()">
+                        <img src="assets/imgs/ic_cabs.png">
+                        <p>{{'cabs' | translate}}</p>
+                    </div>
+                </ion-col>
+                <ion-col size="3">
+                    <div class="menu_items" (click)="search_homestay()">
+                        <img src="assets/imgs/ic_homestay.png">
+                        <p>{{'homestays' | translate}}</p>
+                    </div>
+                </ion-col>
+                <ion-col size="3">
+                    <div class="menu_items">
+                        <img src="assets/imgs/ic_more.png">
+                        <p>{{'more' | translate}}</p>
+                    </div>
+                </ion-col>
+
+            </ion-row>
+        </div>
+    </div>
+</ion-header>
+
+<ion-content class="bg_color" fullscreen>
+    <div class="scroll_box">
+        <div class="heading_box">
+            <h2>Exclusive Hotels</h2>
+            <p>Experience actual meaning of awesomeness</p>
+        </div>
+        <div class="scroll_container">
+            <div class="items_scroll" (click)="hotel_info()">
+                <div class="item_img center_img">
+                    <img src="assets/imgs/hotel2.png" class="crop_img">
+                </div>
+                <div class="item_details">
+                    <h2>Hotel Hexel Paradise</h2>
+                    <h3 class="d-flex">Manthattan Beach <span class="end">$1449.00</span></h3>
+                </div>
+            </div>
+            <div class="items_scroll" (click)="hotel_info()">
+                <div class="item_img center_img">
+                    <img src="assets/imgs/hotel1.png" class="crop_img">
+                </div>
+                <div class="item_details">
+                    <h2>Hotel Silver Leaf</h2>
+                    <h3 class="d-flex">Manthattan Beach <span class="end">$1449.00</span></h3>
+                </div>
+            </div>
+            <div class="items_scroll" (click)="hotel_info()">
+                <div class="item_img center_img">
+                    <img src="assets/imgs/hotel2.png" class="crop_img">
+                </div>
+                <div class="item_details">
+                    <h2>Hotel Hexel Paradise</h2>
+                    <h3 class="d-flex">Manthattan Beach <span class="end">$1449.00</span></h3>
+                </div>
+            </div>
+            <div class="items_scroll" (click)="hotel_info()">
+                <div class="item_img center_img">
+                    <img src="assets/imgs/hotel1.png" class="crop_img">
+                </div>
+                <div class="item_details">
+                    <h2>Hotel Silver Leaf</h2>
+                    <h3 class="d-flex">Manthattan Beach <span class="end">$1449.00</span></h3>
+                </div>
+            </div>
+            <div class="items_scroll" (click)="hotel_info()">
+                <div class="item_img center_img">
+                    <img src="assets/imgs/hotel2.png" class="crop_img">
+                </div>
+                <div class="item_details">
+                    <h2>Hotel Hexel Paradise</h2>
+                    <h3 class="d-flex">Manthattan Beach <span class="end">$1449.00</span></h3>
+                </div>
+            </div>
+            <div class="items_scroll" (click)="hotel_info()">
+                <div class="item_img center_img">
+                    <img src="assets/imgs/hotel1.png" class="crop_img">
+                </div>
+                <div class="item_details">
+                    <h2>Hotel Silver Leaf</h2>
+                    <h3 class="d-flex">Manthattan Beach <span class="end">$1449.00</span></h3>
+                </div>
+            </div>
+            <div class="items_scroll" (click)="hotel_info()">
+                <div class="item_img center_img">
+                    <img src="assets/imgs/hotel2.png" class="crop_img">
+                </div>
+                <div class="item_details">
+                    <h2>Hotel Hexel Paradise</h2>
+                    <h3 class="d-flex">Manthattan Beach <span class="end">$1449.00</span></h3>
+                </div>
+            </div>
+            <div class="items_scroll" (click)="hotel_info()">
+                <div class="item_img center_img">
+                    <img src="assets/imgs/hotel1.png" class="crop_img">
+                </div>
+                <div class="item_details">
+                    <h2>Hotel Silver Leaf</h2>
+                    <h3 class="d-flex">Manthattan Beach <span class="end">$1449.00</span></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="scroll_box">
+        <div class="heading_box">
+            <h2>Most Popular Hotel</h2>
+            <p>Experience actual meaning of awesomeness</p>
+        </div>
+        <div class="scroll_container">
+            <div class="items_scroll" (click)="hotel_info()">
+                <div class="item_img center_img">
+                    <img src="assets/imgs/hotel2.png" class="crop_img">
+                </div>
+                <div class="item_details">
+                    <h2>Hotel Hexel Paradise</h2>
+                    <h3 class="d-flex">Manthattan Beach <span class="end">$1449.00</span></h3>
+                </div>
+            </div>
+            <div class="items_scroll" (click)="hotel_info()">
+                <div class="item_img center_img">
+                    <img src="assets/imgs/hotel1.png" class="crop_img">
+                </div>
+                <div class="item_details">
+                    <h2>Hotel Silver Leaf</h2>
+                    <h3 class="d-flex">Manthattan Beach <span class="end">$1449.00</span></h3>
+                </div>
+            </div>
+            <div class="items_scroll" (click)="hotel_info()">
+                <div class="item_img center_img">
+                    <img src="assets/imgs/hotel2.png" class="crop_img">
+                </div>
+                <div class="item_details">
+                    <h2>Hotel Hexel Paradise</h2>
+                    <h3 class="d-flex">Manthattan Beach <span class="end">$1449.00</span></h3>
+                </div>
+            </div>
+            <div class="items_scroll" (click)="hotel_info()">
+                <div class="item_img center_img">
+                    <img src="assets/imgs/hotel1.png" class="crop_img">
+                </div>
+                <div class="item_details">
+                    <h2>Hotel Silver Leaf</h2>
+                    <h3 class="d-flex">Manthattan Beach <span class="end">$1449.00</span></h3>
+                </div>
+            </div>
+            <div class="items_scroll" (click)="hotel_info()">
+                <div class="item_img center_img">
+                    <img src="assets/imgs/hotel2.png" class="crop_img">
+                </div>
+                <div class="item_details">
+                    <h2>Hotel Hexel Paradise</h2>
+                    <h3 class="d-flex">Manthattan Beach <span class="end">$1449.00</span></h3>
+                </div>
+            </div>
+            <div class="items_scroll" (click)="hotel_info()">
+                <div class="item_img center_img">
+                    <img src="assets/imgs/hotel1.png" class="crop_img">
+                </div>
+                <div class="item_details">
+                    <h2>Hotel Silver Leaf</h2>
+                    <h3 class="d-flex">Manthattan Beach <span class="end">$1449.00</span></h3>
+                </div>
+            </div>
+            <div class="items_scroll" (click)="hotel_info()">
+                <div class="item_img center_img">
+                    <img src="assets/imgs/hotel2.png" class="crop_img">
+                </div>
+                <div class="item_details">
+                    <h2>Hotel Hexel Paradise</h2>
+                    <h3 class="d-flex">Manthattan Beach <span class="end">$1449.00</span></h3>
+                </div>
+            </div>
+            <div class="items_scroll" (click)="hotel_info()">
+                <div class="item_img center_img">
+                    <img src="assets/imgs/hotel1.png" class="crop_img">
+                </div>
+                <div class="item_details">
+                    <h2>Hotel Silver Leaf</h2>
+                    <h3 class="d-flex">Manthattan Beach <span class="end">$1449.00</span></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="scroll_box">
+        <div class="heading_box">
+            <h2>Exclusive Hotels</h2>
+            <p>Experience actual meaning of awesomeness</p>
+        </div>
+        <div class="scroll_container">
+            <div class="items_scroll" (click)="hotel_info()">
+                <div class="item_img center_img">
+                    <img src="assets/imgs/hotel2.png" class="crop_img">
+                </div>
+                <div class="item_details">
+                    <h2>Hotel Hexel Paradise</h2>
+                    <h3 class="d-flex">Manthattan Beach <span class="end">$1449.00</span></h3>
+                </div>
+            </div>
+            <div class="items_scroll" (click)="hotel_info()">
+                <div class="item_img center_img">
+                    <img src="assets/imgs/hotel1.png" class="crop_img">
+                </div>
+                <div class="item_details">
+                    <h2>Hotel Silver Leaf</h2>
+                    <h3 class="d-flex">Manthattan Beach <span class="end">$1449.00</span></h3>
+                </div>
+            </div>
+            <div class="items_scroll" (click)="hotel_info()">
+                <div class="item_img center_img">
+                    <img src="assets/imgs/hotel2.png" class="crop_img">
+                </div>
+                <div class="item_details">
+                    <h2>Hotel Hexel Paradise</h2>
+                    <h3 class="d-flex">Manthattan Beach <span class="end">$1449.00</span></h3>
+                </div>
+            </div>
+            <div class="items_scroll" (click)="hotel_info()">
+                <div class="item_img center_img">
+                    <img src="assets/imgs/hotel1.png" class="crop_img">
+                </div>
+                <div class="item_details">
+                    <h2>Hotel Silver Leaf</h2>
+                    <h3 class="d-flex">Manthattan Beach <span class="end">$1449.00</span></h3>
+                </div>
+            </div>
+            <div class="items_scroll" (click)="hotel_info()">
+                <div class="item_img center_img">
+                    <img src="assets/imgs/hotel2.png" class="crop_img">
+                </div>
+                <div class="item_details">
+                    <h2>Hotel Hexel Paradise</h2>
+                    <h3 class="d-flex">Manthattan Beach <span class="end">$1449.00</span></h3>
+                </div>
+            </div>
+            <div class="items_scroll" (click)="hotel_info()">
+                <div class="item_img center_img">
+                    <img src="assets/imgs/hotel1.png" class="crop_img">
+                </div>
+                <div class="item_details">
+                    <h2>Hotel Silver Leaf</h2>
+                    <h3 class="d-flex">Manthattan Beach <span class="end">$1449.00</span></h3>
+                </div>
+            </div>
+            <div class="items_scroll" (click)="hotel_info()">
+                <div class="item_img center_img">
+                    <img src="assets/imgs/hotel2.png" class="crop_img">
+                </div>
+                <div class="item_details">
+                    <h2>Hotel Hexel Paradise</h2>
+                    <h3 class="d-flex">Manthattan Beach <span class="end">$1449.00</span></h3>
+                </div>
+            </div>
+            <div class="items_scroll" (click)="hotel_info()">
+                <div class="item_img center_img">
+                    <img src="assets/imgs/hotel1.png" class="crop_img">
+                </div>
+                <div class="item_details">
+                    <h2>Hotel Silver Leaf</h2>
+                    <h3 class="d-flex">Manthattan Beach <span class="end">$1449.00</span></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="scroll_box">
+        <div class="heading_box">
+            <h2>Most Popular Hotel</h2>
+            <p>Experience actual meaning of awesomeness</p>
+        </div>
+        <div class="scroll_container">
+            <div class="items_scroll" (click)="hotel_info()">
+                <div class="item_img center_img">
+                    <img src="assets/imgs/hotel2.png" class="crop_img">
+                </div>
+                <div class="item_details">
+                    <h2>Hotel Hexel Paradise</h2>
+                    <h3 class="d-flex">Manthattan Beach <span class="end">$1449.00</span></h3>
+                </div>
+            </div>
+            <div class="items_scroll" (click)="hotel_info()">
+                <div class="item_img center_img">
+                    <img src="assets/imgs/hotel1.png" class="crop_img">
+                </div>
+                <div class="item_details">
+                    <h2>Hotel Silver Leaf</h2>
+                    <h3 class="d-flex">Manthattan Beach <span class="end">$1449.00</span></h3>
+                </div>
+            </div>
+            <div class="items_scroll" (click)="hotel_info()">
+                <div class="item_img center_img">
+                    <img src="assets/imgs/hotel2.png" class="crop_img">
+                </div>
+                <div class="item_details">
+                    <h2>Hotel Hexel Paradise</h2>
+                    <h3 class="d-flex">Manthattan Beach <span class="end">$1449.00</span></h3>
+                </div>
+            </div>
+            <div class="items_scroll" (click)="hotel_info()">
+                <div class="item_img center_img">
+                    <img src="assets/imgs/hotel1.png" class="crop_img">
+                </div>
+                <div class="item_details">
+                    <h2>Hotel Silver Leaf</h2>
+                    <h3 class="d-flex">Manthattan Beach <span class="end">$1449.00</span></h3>
+                </div>
+            </div>
+            <div class="items_scroll" (click)="hotel_info()">
+                <div class="item_img center_img">
+                    <img src="assets/imgs/hotel2.png" class="crop_img">
+                </div>
+                <div class="item_details">
+                    <h2>Hotel Hexel Paradise</h2>
+                    <h3 class="d-flex">Manthattan Beach <span class="end">$1449.00</span></h3>
+                </div>
+            </div>
+            <div class="items_scroll" (click)="hotel_info()">
+                <div class="item_img center_img">
+                    <img src="assets/imgs/hotel1.png" class="crop_img">
+                </div>
+                <div class="item_details">
+                    <h2>Hotel Silver Leaf</h2>
+                    <h3 class="d-flex">Manthattan Beach <span class="end">$1449.00</span></h3>
+                </div>
+            </div>
+            <div class="items_scroll" (click)="hotel_info()">
+                <div class="item_img center_img">
+                    <img src="assets/imgs/hotel2.png" class="crop_img">
+                </div>
+                <div class="item_details">
+                    <h2>Hotel Hexel Paradise</h2>
+                    <h3 class="d-flex">Manthattan Beach <span class="end">$1449.00</span></h3>
+                </div>
+            </div>
+            <div class="items_scroll" (click)="hotel_info()">
+                <div class="item_img center_img">
+                    <img src="assets/imgs/hotel1.png" class="crop_img">
+                </div>
+                <div class="item_details">
+                    <h2>Hotel Silver Leaf</h2>
+                    <h3 class="d-flex">Manthattan Beach <span class="end">$1449.00</span></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</ion-content>

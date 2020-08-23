@@ -1,0 +1,198 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button text="" icon="arrow-back-outline"></ion-back-button>
+        </ion-buttons>
+        <ion-title>{{'sort_filters' | translate}}</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+    <ion-list lines="none">
+        <ion-card>
+            <h2>{{'sort_by' | translate}}</h2>
+            <ion-radio-group>
+
+                <ion-item>
+                    <ion-label>
+                        <h3>Price</h3>
+                    </ion-label>
+                    <ion-radio checked="true" value="Price"></ion-radio>
+                </ion-item>
+                <ion-item>
+                    <ion-label>
+                        <h3>Dept. Time</h3>
+                    </ion-label>
+                    <ion-radio value="dept"></ion-radio>
+                </ion-item>
+                <ion-item>
+                    <ion-label>
+                        <h3>Arrv. Time</h3>
+                    </ion-label>
+                    <ion-radio value="arrv"></ion-radio>
+                </ion-item>
+            </ion-radio-group>
+        </ion-card>
+
+
+        <ion-card>
+            <h2 style="padding-bottom: 0;">{{'price_range' | translate}}</h2>
+            <ion-item class="item-range">
+                <div class="item_inner">
+                    <ion-range mode="md" min="-500" max="1000" pin="true"></ion-range>
+                    <h3 class="d-flex">$ 100 <span class="end">$ 1000</span></h3>
+                </div>
+            </ion-item>
+        </ion-card>
+
+        <ion-card>
+            <h2>{{'departure_time' | translate}}</h2>
+            <ion-radio-group class="arrivalDepartureTime">
+                <ion-item>
+                    <ion-label>
+                        <ion-icon class="ion-text-start zmdi zmdi-brightness-4"></ion-icon>
+                        <h3 class="">
+                            Mind Night
+                            <br>
+                            <span>00:00 - 04:59</span>
+                        </h3>
+                    </ion-label>
+                    <ion-radio checked="true" value="Mind_Night"></ion-radio>
+                </ion-item>
+                <ion-item>
+                    <ion-label>
+                        <ion-icon class="ion-text-start zmdi zmdi-brightness-5"></ion-icon>
+                        <h3>
+                            Morning
+                            <br>
+                            <span>05:00 - 04:59</span>
+                        </h3>
+                    </ion-label>
+                    <ion-radio value="Morning"></ion-radio>
+                </ion-item>
+                <ion-item>
+                    <ion-label>
+                        <ion-icon class="ion-text-start zmdi zmdi-brightness-7"></ion-icon>
+                        <h3>
+                            Afternoon
+                            <br>
+                            <span>12:00 - 17:59</span>
+                        </h3>
+                    </ion-label>
+                    <ion-radio value="Afternoon"></ion-radio>
+                </ion-item>
+
+                <ion-item>
+                    <ion-label>
+                        <ion-icon class="ion-text-start zmdi zmdi-brightness-4"></ion-icon>
+                        <h3 class="">
+                            Mind Night
+                            <br>
+                            <span>00:00 - 04:59</span>
+                        </h3>
+                    </ion-label>
+                    <ion-radio value="Mind_Night1"></ion-radio>
+                </ion-item>
+                <ion-item>
+                    <ion-label>
+                        <ion-icon class="ion-text-start zmdi zmdi-brightness-5"></ion-icon>
+                        <h3>
+                            Morning
+                            <br>
+                            <span>05:00 - 04:59</span>
+                        </h3>
+                    </ion-label>
+                    <ion-radio value="Morning1"></ion-radio>
+                </ion-item>
+                <ion-item>
+                    <ion-label>
+                        <ion-icon class="ion-text-start zmdi zmdi-brightness-7"></ion-icon>
+                        <h3>
+                            Afternoon
+                            <br>
+                            <span>12:00 - 17:59</span>
+                        </h3>
+                    </ion-label>
+                    <ion-radio value="Afternoon1"></ion-radio>
+                </ion-item>
+            </ion-radio-group>
+        </ion-card>
+        <ion-card>
+            <h2>{{'arrival_time' | translate}}</h2>
+            <ion-radio-group class="arrivalDepartureTime">
+                <ion-item>
+                    <ion-label>
+                        <ion-icon class="ion-text-start zmdi zmdi-brightness-4"></ion-icon>
+                        <h3 class="">
+                            Mind Night
+                            <br>
+                            <span>00:00 - 04:59</span>
+                        </h3>
+                    </ion-label>
+                    <ion-radio value="Mind_Night2"></ion-radio>
+                </ion-item>
+                <ion-item>
+                    <ion-label>
+                        <ion-icon class="ion-text-start zmdi zmdi-brightness-5"></ion-icon>
+                        <h3>
+                            Morning
+                            <br>
+                            <span>05:00 - 04:59</span>
+                        </h3>
+                    </ion-label>
+                    <ion-radio value="Morning2"></ion-radio>
+                </ion-item>
+                <ion-item>
+                    <ion-label>
+                        <ion-icon class="ion-text-start zmdi zmdi-brightness-7"></ion-icon>
+                        <h3>
+                            Afternoon
+                            <br>
+                            <span>12:00 - 17:59</span>
+                        </h3>
+                    </ion-label>
+                    <ion-radio value="Afternoon2"></ion-radio>
+                </ion-item>
+                <ion-item>
+                    <ion-label>
+                        <ion-icon class="ion-text-start zmdi zmdi-brightness-4"></ion-icon>
+                        <h3 class="">
+                            Mind Night
+                            <br>
+                            <span>00:00 - 04:59</span>
+                        </h3>
+                    </ion-label>
+                    <ion-radio value="Mind_Night3"></ion-radio>
+                </ion-item>
+                <ion-item>
+                    <ion-label>
+                        <ion-icon class="ion-text-start zmdi zmdi-brightness-5"></ion-icon>
+                        <h3>
+                            Morning
+                            <br>
+                            <span>05:00 - 04:59</span>
+                        </h3>
+                    </ion-label>
+                    <ion-radio value="Morning3"></ion-radio>
+                </ion-item>
+                <ion-item>
+                    <ion-label>
+                        <ion-icon class="ion-text-start zmdi zmdi-brightness-7"></ion-icon>
+                        <h3>
+                            Afternoon
+                            <br>
+                            <span>12:00 - 17:59</span>
+                        </h3>
+                    </ion-label>
+                    <ion-radio value="Afternoon3"></ion-radio>
+                </ion-item>
+            </ion-radio-group>
+        </ion-card>
+    </ion-list>
+</ion-content>
+
+<ion-footer class="ion-no-border">
+    <ion-button mode="md" size="large" shape="full" class="btn">
+        {{'apply_now' | translate}}
+    </ion-button>
+</ion-footer>

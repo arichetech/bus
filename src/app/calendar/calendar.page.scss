@@ -1,0 +1,14 @@
+ion-content {
+    --background: none !important;
+}
+
+ion-footer {
+     background: var(--bg-color);
+
+    ion-calendar {
+        position: relative;
+        z-index: 99;
+        background: var(--bg-color);
+        
+    }
+}

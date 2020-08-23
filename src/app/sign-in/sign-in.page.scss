@@ -1,0 +1,73 @@
+ion-header {
+    .header_text {
+        .logo {
+            width: 80px;
+            min-width: 80px;
+        }
+    }
+
+}
+
+.socila_section {
+    background: var(--white);
+    padding: 75px 19px 18px 19px;
+    border-bottom: 8px solid var(--bg-color);
+
+    p {
+        color: var(--text-light);
+        margin: 0;
+        font-size: 1.1rem;
+        padding-bottom: 15px;
+        font-weight: 500;
+    }
+
+    ion-row {
+        margin-bottom: 23px;
+        margin: 0 -10px;
+
+        ion-col {
+            padding: 0 10px;
+        }
+    }
+
+    .button.btn {
+        color: #3D3D3D !important;
+        letter-spacing: 0 !important;
+        text-transform: unset !important;
+        font-weight: 600;
+
+        &[block] {
+            border-radius: 7px;
+        }
+
+        img {
+            width: 18px;
+            position: relative;
+            left: -12px;
+        }
+
+    }
+}
+
+.form {
+    padding-top: 20px;
+    padding-bottom: 15px;
+
+    h2 {
+        font-weight: 500;
+        margin: 0;
+        font-size: 1.1rem;
+        color: var(--text-dark);
+        margin-bottom: 20px;
+    }
+    
+    ion-list{
+        ion-item{
+            
+        }
+    }
+}
+
+ion-footer {
+    background: var(--bg-color);
+}

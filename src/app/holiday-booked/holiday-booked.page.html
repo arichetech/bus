@@ -1,0 +1,147 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button text="" icon="arrow-back-outline"></ion-back-button>
+        </ion-buttons>
+        <ion-title>{{'holiday_booked' | translate}}</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+    <div class="booking_receipt">
+        <div class="container receipt_header d-flex">
+            <div class="text_box">
+                <h2>Manhattan Beaches</h2>
+                <h6 class="d-flex">{{'call_us' | translate}} <span class="end">$265.00</span></h6>
+            </div>
+        </div>
+
+        <div class="banner">
+            <div class="scroll-x">
+                <div class="item_scroll">
+                    <div class="img_box center_img">
+                        <img src="assets/imgs/ho1.png" class="crop_img">
+                    </div>
+                </div>
+                <div class="item_scroll">
+                    <div class="img_box center_img">
+                        <img src="assets/imgs/ho2.png" class="crop_img">
+                    </div>
+                </div>
+                <div class="item_scroll">
+                    <div class="img_box center_img">
+                        <img src="assets/imgs/ho3.png" class="crop_img">
+                    </div>
+                </div>
+                <div class="item_scroll">
+                    <div class="img_box center_img">
+                        <img src="assets/imgs/ho1.png" class="crop_img">
+                    </div>
+                </div>
+                <div class="item_scroll">
+                    <div class="img_box center_img">
+                        <img src="assets/imgs/ho1.png" class="crop_img">
+                    </div>
+                </div>
+                <div class="item_scroll">
+                    <div class="img_box center_img">
+                        <img src="assets/imgs/ho2.png" class="crop_img">
+                    </div>
+                </div>
+                <div class="item_scroll">
+                    <div class="img_box center_img">
+                        <img src="assets/imgs/ho3.png" class="crop_img">
+                    </div>
+                </div>
+                <div class="item_scroll">
+                    <div class="img_box center_img">
+                        <img src="assets/imgs/ho1.png" class="crop_img">
+                    </div>
+                </div>
+                <div class="item_scroll">
+                    <div class="img_box center_img">
+                        <img src="assets/imgs/ho1.png" class="crop_img">
+                    </div>
+                </div>
+                <div class="item_scroll">
+                    <div class="img_box center_img">
+                        <img src="assets/imgs/ho2.png" class="crop_img">
+                    </div>
+                </div>
+                <div class="item_scroll">
+                    <div class="img_box center_img">
+                        <img src="assets/imgs/ho3.png" class="crop_img">
+                    </div>
+                </div>
+                <div class="item_scroll">
+                    <div class="img_box center_img">
+                        <img src="assets/imgs/ho1.png" class="crop_img">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container receipt_containt">
+            <ion-row>
+                <ion-col size="6">
+                    <h3>{{'holiday_starts' | translate}}</h3>
+                    <h2>23 Jun, 2019</h2>
+                </ion-col>
+                <ion-col size="6" class="ion-text-end">
+                    <h3>{{'holiday_ends' | translate}}</h3>
+                    <h2>24 Jun, 2019</h2>
+                </ion-col>
+            </ion-row>
+
+
+            <ion-row>
+                <ion-col size="5">
+                    <h3>{{'booked_by' | translate}}</h3>
+                    <h2>Sam Smith</h2>
+                </ion-col>
+                <ion-col size="2" class="ion-text-center">
+                    <h3>{{'age' | translate}}</h3>
+                    <h2>25</h2>
+                </ion-col>
+                <ion-col size="5" class="ion-text-end">
+                    <h3>{{'gender' | translate}}</h3>
+                    <h2>Male</h2>
+                </ion-col>
+            </ion-row>
+        </div>
+        <div class="container holiday_info">
+            <ion-segment [(ngModel)]="booking_day" lines="none" mode="md">
+                <ion-segment-button class="ion-text-start" value="day_a" mode="md">
+                    <ion-label>{{'day' | translate}} 1</ion-label>
+                </ion-segment-button>
+                <ion-segment-button class="ion-text-start" value="day_b" mode="md">
+                    <ion-label>{{'day' | translate}} 2</ion-label>
+                </ion-segment-button>
+                <ion-segment-button class="ion-text-start" value="day_c" mode="md">
+                    <ion-label>{{'day' | translate}} 3</ion-label>
+                </ion-segment-button>
+            </ion-segment>
+
+
+            <div class="tab_container" [ngSwitch]="booking_day">
+                <div class="tab_containt" *ngSwitchCase="'day_a'">
+                    <h2 class="">- Pick-up from Air Port</h2>
+                    <h2 class="">- Drop at hotel</h2>
+                    <h2 class="">- Breakfast at Hotel</h2>
+                    <h2 class="">- At evening sightseeing at beach</h2>
+                    <h2 class="">- Candle light dinner at beach resort</h2>
+                </div>
+                <div class="tab_containt" *ngSwitchCase="'day_b'">
+                    <h2 class="">- At evening sightseeing at beach</h2>
+                    <h2 class="">- Candle light dinner at beach resort</h2>
+                </div>
+                <div class="tab_containt" *ngSwitchCase="'day_c'">
+                    <h2 class="">- Breakfast at Hotel</h2>
+                    <h2 class="">- At evening sightseeing at beach</h2>
+                    <h2 class="">- Candle light dinner at beach resort</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--    <ion-button mode="md" size="large" shape="full" class="btn"> {{'get_direction' | translate}} </ion-button>-->
+</ion-content>

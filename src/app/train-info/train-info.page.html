@@ -1,0 +1,122 @@
+<ion-header class="bg_transparent">
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button text="" icon="arrow-back-outline"></ion-back-button>
+        </ion-buttons>
+        <ion-title></ion-title>
+    </ion-toolbar>
+    <div class="banner">
+        <div class="header_text">
+            <h2> <span>23 Jul 2019</span>
+                <ion-icon></ion-icon>
+                <span>1 {{'traveller' | translate}}</span>
+            </h2>
+        </div>
+        <div class="banner_bg center_img">
+            <img src="assets/imgs/train.png" class="crop_img">
+        </div>
+        <div class="form">
+            <ion-list lines="none">
+                <ion-item>
+                    <div class="item_inner d-flex">
+                        <ion-icon class="zmdi zmdi-long-arrow-up"></ion-icon>
+                        <div class="text_box">
+                            <h4>23 Jul, 12:35 am</h4>
+                            <h2>Houston, USA</h2>
+                        </div>
+                    </div>
+                </ion-item>
+                <div class="traveling_time d-flex">
+                    <div class="underline end"></div>
+                    <h3 class="end ion-text-end">&nbsp; &nbsp; 12 hr 35 mins | 8 Stop
+                    </h3>
+                    &nbsp;&nbsp; <ion-icon class="zmdi zmdi-swap-alt"></ion-icon>
+                </div>
+                <ion-item>
+                    <div class="item_inner d-flex">
+                        <ion-icon class="zmdi zmdi-long-arrow-down"></ion-icon>
+                        <div class="text_box">
+                            <h4>24 Jul, 12:45 pm</h4>
+                            <h2>Manhattan, USA</h2>
+                        </div>
+                    </div>
+                </ion-item>
+            </ion-list>
+        </div>
+
+        <div class="facilities d-flex">
+            <h2 class="d-flex">
+                <ion-icon class="zmdi zmdi-wifi-alt"></ion-icon>
+                WiFi
+            </h2>
+            <h2 class="d-flex">
+                <ion-icon class="zmdi zmdi-iridescent"></ion-icon>
+                AC
+            </h2>
+            <h2 class="d-flex disabled">
+                <ion-icon class="zmdi zmdi-input-power"></ion-icon>
+                Power
+            </h2>
+            <h2 class="d-flex">
+                <ion-icon class="zmdi zmdi-case"></ion-icon>
+                6 kg bag
+            </h2>
+        </div>
+    </div>
+</ion-header>
+
+<ion-content>
+    <div class="container">
+        <div class="flight_details d-flex">
+            <div class="flight_img center_img">
+                <img src="assets/imgs/train_1.png" class="crop_img">
+            </div>
+            <div class="text">
+                <h2>American Superfast Express</h2>
+                <h3>B145523</h3>
+            </div>
+        </div>
+
+        <ion-list lines="none">
+            <ion-radio-group>
+                <ion-item>
+                    <ion-label class="d-flex">
+                        <div class="class_info">
+                            <h2>Frist Class Seats</h2>
+                            <h3>50 Seats left</h3>
+                        </div>
+                        <h5 class="end">$35.50</h5>
+                    </ion-label>
+                    <ion-radio checked="true" value="Economy"></ion-radio>
+                </ion-item>
+
+                <ion-item>
+                    <ion-label class="d-flex">
+                        <div class="class_info">
+                            <h2>Second Class Seats</h2>
+                            <h3>78 Seats left</h3>
+                        </div>
+                        <h5 class="end">$23.00</h5>
+                    </ion-label>
+                    <ion-radio value="Premium"></ion-radio>
+                </ion-item>
+
+                <ion-item>
+                    <ion-label class="d-flex">
+                        <div class="class_info">
+                            <h2>Chair Class Seats</h2>
+                            <h3>25 Seats left</h3>
+                        </div>
+                        <h5 class="end">$300.00</h5>
+                    </ion-label>
+                    <ion-radio value="Business"></ion-radio>
+                </ion-item>
+            </ion-radio-group>
+        </ion-list>
+    </div>
+</ion-content>
+<ion-footer class="ion-no-border">
+    <ion-button mode="md" size="large" shape="full" class="btn" (click)="confirm_booking()">
+        {{'book_now' | translate}}
+    </ion-button>
+</ion-footer>
