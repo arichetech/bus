@@ -17,7 +17,7 @@
     </div>
 </ion-header>
 
-<ion-content>
+<ion-content class="bg_color" fullscreen>
 
     <div class="buy_this_app end" *ngIf="config.showBuyPromt" (click)="buyAppAction()">
         <h2>
@@ -45,32 +45,32 @@
                 <h2>{{'terms_conditions' | translate}} </h2>
             </div>
         </ion-item>
-        <ion-item (click)="my_reviews()">
-            <div class="item_inner d-flex">
-                <ion-icon class="zmdi zmdi-star"></ion-icon>
-                <h2 class="d-flex">{{'my_reviews' | translate}} </h2>
-            </div>
-        </ion-item>
+        <!--<ion-item (click)="my_reviews()">-->
+            <!--<div class="item_inner d-flex">-->
+                <!--<ion-icon class="zmdi zmdi-star"></ion-icon>-->
+                <!--<h2 class="d-flex">{{'my_reviews' | translate}} </h2>-->
+            <!--</div>-->
+        <!--</ion-item>-->
 
-        <ion-item (click)="select_language()">
-            <div class="item_inner d-flex">
-                <ion-icon class="zmdi zmdi-globe"></ion-icon>
-                <h2 class="d-flex">{{'change_language' | translate}} </h2>
-            </div>
-        </ion-item>
+        <!--<ion-item (click)="select_language()">-->
+            <!--<div class="item_inner d-flex">-->
+                <!--<ion-icon class="zmdi zmdi-globe"></ion-icon>-->
+                <!--<h2 class="d-flex">{{'change_language' | translate}} </h2>-->
+            <!--</div>-->
+        <!--</ion-item>-->
 
-        <ion-item>
-            <div class="item_inner d-flex">
-                <ion-icon class="zmdi zmdi-share"></ion-icon>
-                <h2 class="d-flex">{{'share_app' | translate}} </h2>
-            </div>
-        </ion-item>
-        <ion-item>
-            <div class="item_inner d-flex">
-                <ion-icon class="zmdi zmdi-thumb-up"></ion-icon>
-                <h2>{{'rate_app' | translate}} </h2>
-            </div>
-        </ion-item>
+        <!--<ion-item>-->
+            <!--<div class="item_inner d-flex">-->
+                <!--<ion-icon class="zmdi zmdi-share"></ion-icon>-->
+                <!--<h2 class="d-flex">{{'share_app' | translate}} </h2>-->
+            <!--</div>-->
+        <!--</ion-item>-->
+        <!--<ion-item>-->
+            <!--<div class="item_inner d-flex">-->
+                <!--<ion-icon class="zmdi zmdi-thumb-up"></ion-icon>-->
+                <!--<h2>{{'rate_app' | translate}} </h2>-->
+            <!--</div>-->
+        <!--</ion-item>-->
         <ion-item (click)="signin()">
             <div class="item_inner d-flex">
                 <ion-icon class="zmdi zmdi-power-off"></ion-icon>
